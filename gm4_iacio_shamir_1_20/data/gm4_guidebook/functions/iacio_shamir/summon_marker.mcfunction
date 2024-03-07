@@ -1,0 +1,1 @@
+execute if score gm4_iacio_shamir load.status matches 1.. run summon marker ~ 1861.593306342615 ~ {CustomName:'"gm4_iacio_shamir"',Tags:["gm4_guide","gm4_guide_iacio_shamir"],data:{type:"expansion",base:"metallurgy",id:"iacio_shamir",trigger:88,module_name:"Iacio Shamir",toc_line:"  ● Iacio Shamir",line_count:1}}

@@ -1,0 +1,71 @@
+{
+  "parent": "gm4_guidebook:root",
+  "criteria": {
+    "obtain_lightning_bottle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:potion",
+              "minecraft:splash_potion",
+              "minecraft:lingering_potion"
+            ],
+            "nbt": "{gm4_lightning_in_a_bottle:1b}"
+          }
+        ],
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "gamemode": "spectator"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_guidebook"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_lightning_in_a_bottle"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "obtain_lightning_bottle"
+    ]
+  ],
+  "rewards": {
+    "function": "gm4_guidebook:lightning_in_a_bottle/rewards/usage"
+  }
+}

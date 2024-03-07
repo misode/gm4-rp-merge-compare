@@ -1,0 +1,61 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gm4_orb_of_ankou:items/soul_essence/bargaining"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:looting",
+          "chances": [
+            0.0083,
+            0.0332,
+            0.2075,
+            0.6806,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gm4_orb_of_ankou:items/soul_essence/vanishing"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:looting",
+          "chances": [
+            0.0056,
+            0.0224,
+            0.14,
+            0.4592,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    }
+  ]
+}

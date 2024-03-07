@@ -1,0 +1,37 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "count": 1,
+            "nbt": "{gm4_guidebook:{lectern:1b}}"
+          }
+        ],
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_guidebook"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "gm4_guidebook:lecterns/restore/search"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "parent": "gm4_guidebook:root",
+  "criteria": {
+    "hurt_by_exploding_bat": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:creeper",
+            "nbt": "{Tags:[\"gm4_bat_grenade\"]}"
+          }
+        },
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "gamemode": "spectator"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_guidebook"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_bat_grenades"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "hurt_by_exploding_bat"
+    ]
+  ],
+  "rewards": {
+    "function": "gm4_guidebook:bat_grenades/rewards/bat_explosions"
+  }
+}

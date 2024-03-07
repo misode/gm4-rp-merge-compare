@@ -1,0 +1,11 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "mainhand": {
+        "tag": "gm4_auto_crafting:dye_blue_carpet_ingredient_1"
+      }
+    }
+  }
+}

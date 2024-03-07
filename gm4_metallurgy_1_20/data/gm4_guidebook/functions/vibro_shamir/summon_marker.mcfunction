@@ -1,0 +1,1 @@
+execute if score gm4_metallurgy load.status matches 1.. run summon marker ~ 4598.994517095294 ~ {CustomName:'"gm4_vibro_shamir"',Tags:["gm4_guide","gm4_guide_vibro_shamir"],data:{type:"expansion",base:"metallurgy",id:"vibro_shamir",trigger:24,module_name:"Vibro Shamir",toc_line:"  ● Vibro Shamir",line_count:1}}

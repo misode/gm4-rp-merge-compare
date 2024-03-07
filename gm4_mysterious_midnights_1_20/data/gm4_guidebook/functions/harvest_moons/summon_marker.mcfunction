@@ -1,0 +1,1 @@
+execute if score gm4_mysterious_midnights load.status matches 1.. run summon marker ~ 1660.070734297034 ~ {CustomName:'"gm4_harvest_moons"',Tags:["gm4_guide","gm4_guide_harvest_moons"],data:{type:"expansion",base:"mysterious_midnights",id:"harvest_moons",trigger:45,module_name:"Harvest Moons",toc_line:"  ● Harvest Moons",line_count:1}}

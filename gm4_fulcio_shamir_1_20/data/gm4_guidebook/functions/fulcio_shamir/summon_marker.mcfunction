@@ -1,0 +1,1 @@
+execute if score gm4_fulcio_shamir load.status matches 1.. run summon marker ~ 1398.90858752394 ~ {CustomName:'"gm4_fulcio_shamir"',Tags:["gm4_guide","gm4_guide_fulcio_shamir"],data:{type:"expansion",base:"metallurgy",id:"fulcio_shamir",trigger:79,module_name:"Fulcio Shamir",toc_line:"  ● Fulcio Shamir",line_count:1}}

@@ -1,0 +1,1 @@
+execute if score gm4_podzol_rooting_soil load.status matches 1.. run summon marker ~ 3410.049756485277 ~ {CustomName:'"gm4_podzol_rooting_soil"',Tags:["gm4_guide","gm4_guide_podzol_rooting_soil"],data:{type:"module",id:"podzol_rooting_soil",trigger:36,module_name:"Podzol Rooting Soil",toc_line:"● Podzol Rooting Soil",line_count:1}}

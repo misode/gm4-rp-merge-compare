@@ -1,0 +1,1 @@
+execute if score gm4_heart_canisters load.status matches 1.. run summon marker ~ 1685.73555234686 ~ {CustomName:'"gm4_heart_canisters"',Tags:["gm4_guide","gm4_guide_heart_canisters"],data:{type:"module",id:"heart_canisters",trigger:15,module_name:"Heart Canisters",toc_line:"● Heart Canisters",line_count:1}}

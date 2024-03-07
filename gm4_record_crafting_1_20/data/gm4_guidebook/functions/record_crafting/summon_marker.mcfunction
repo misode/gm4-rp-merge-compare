@@ -1,0 +1,1 @@
+execute if score gm4_record_crafting load.status matches 1.. run summon marker ~ 3745.179591950063 ~ {CustomName:'"gm4_record_crafting"',Tags:["gm4_guide","gm4_guide_record_crafting"],data:{type:"expansion",base:"custom_crafters",id:"record_crafting",trigger:97,module_name:"Record Crafting",toc_line:"  ● Record Crafting",line_count:1}}

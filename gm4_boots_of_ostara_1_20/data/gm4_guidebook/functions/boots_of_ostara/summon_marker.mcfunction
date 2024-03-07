@@ -1,0 +1,1 @@
+execute if score gm4_boots_of_ostara load.status matches 1.. run summon marker ~ 530.619456296557 ~ {CustomName:'"gm4_boots_of_ostara"',Tags:["gm4_guide","gm4_guide_boots_of_ostara"],data:{type:"module",id:"boots_of_ostara",trigger:87,module_name:"Boots of Ostara",toc_line:"● Boots of Ostara",line_count:1}}

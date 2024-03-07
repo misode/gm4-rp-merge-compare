@@ -1,0 +1,1 @@
+execute if score gm4_mob_curing load.status matches 1.. run summon marker ~ 2791.573318812042 ~ {CustomName:'"gm4_mob_curing"',Tags:["gm4_guide","gm4_guide_mob_curing"],data:{type:"module",id:"mob_curing",trigger:38,module_name:"Mob Curing",toc_line:"● Mob Curing",line_count:1}}

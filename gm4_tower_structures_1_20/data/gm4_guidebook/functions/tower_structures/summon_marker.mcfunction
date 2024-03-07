@@ -1,0 +1,1 @@
+execute if score gm4_tower_structures load.status matches 1.. run summon marker ~ 4238.762042469422 ~ {CustomName:'"gm4_tower_structures"',Tags:["gm4_guide","gm4_guide_tower_structures"],data:{type:"module",id:"tower_structures",trigger:89,module_name:"Tower Structures",toc_line:"● Tower Structures",line_count:1}}

@@ -1,0 +1,9 @@
+{
+  "values": [
+    {
+      "id": "#load:gm4_player_death",
+      "required": false
+    },
+    "gm4_undead_players:load"
+  ]
+}

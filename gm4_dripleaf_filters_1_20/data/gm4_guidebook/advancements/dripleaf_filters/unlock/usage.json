@@ -1,0 +1,73 @@
+{
+  "parent": "gm4_guidebook:root",
+  "criteria": {
+    "obtain_dripleaf_and_hopper": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:big_dripleaf"
+            ]
+          },
+          {
+            "items": [
+              "minecraft:hopper"
+            ]
+          }
+        ],
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "gamemode": "spectator"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_guidebook"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_dripleaf_filters"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "obtain_dripleaf_and_hopper"
+    ]
+  ],
+  "rewards": {
+    "function": "gm4_guidebook:dripleaf_filters/rewards/usage"
+  }
+}

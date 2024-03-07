@@ -1,0 +1,1 @@
+execute if score gm4_trapped_signs load.status matches 1.. run summon marker ~ 4255.539464789339 ~ {CustomName:'"gm4_trapped_signs"',Tags:["gm4_guide","gm4_guide_trapped_signs"],data:{type:"module",id:"trapped_signs",trigger:34,module_name:"Trapped Signs",toc_line:"● Trapped Signs",line_count:1}}

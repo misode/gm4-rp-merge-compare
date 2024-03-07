@@ -1,0 +1,61 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gm4_orb_of_ankou:items/soul_essence/anchoring"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:looting",
+          "chances": [
+            0.0002,
+            0.0008,
+            0.005,
+            0.0164,
+            0.0386,
+            0.0752,
+            0.1298,
+            0.206,
+            0.3074,
+            0.4376,
+            0.6002
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gm4_orb_of_ankou:items/soul_essence/bashing"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:looting",
+          "chances": [
+            0.00025,
+            0.001,
+            0.00625,
+            0.0205,
+            0.04825,
+            0.094,
+            0.16225,
+            0.2575,
+            0.38425,
+            0.547,
+            0.75025
+          ]
+        }
+      ]
+    }
+  ]
+}

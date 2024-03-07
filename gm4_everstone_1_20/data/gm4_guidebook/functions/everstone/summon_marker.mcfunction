@@ -1,0 +1,1 @@
+execute if score gm4_everstone load.status matches 1.. run summon marker ~ 1198.826895401271 ~ {CustomName:'"gm4_everstone"',Tags:["gm4_guide","gm4_guide_everstone"],data:{type:"module",id:"everstone",trigger:75,module_name:"Everstone",toc_line:"● Everstone",line_count:1}}

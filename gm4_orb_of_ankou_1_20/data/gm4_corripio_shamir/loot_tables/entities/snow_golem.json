@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gm4_orb_of_ankou:items/soul_essence/aggressive"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:looting",
+          "chances": [
+            0.00035,
+            0.0014,
+            0.00875,
+            0.0287,
+            0.06755,
+            0.1316,
+            0.22715,
+            0.3605,
+            0.53795,
+            0.7658,
+            1.0
+          ]
+        }
+      ]
+    }
+  ]
+}

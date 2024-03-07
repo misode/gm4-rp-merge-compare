@@ -1,0 +1,1 @@
+execute if score gm4_calling_bell load.status matches 1.. run summon marker ~ 628.817363877675 ~ {CustomName:'"gm4_calling_bell"',Tags:["gm4_guide","gm4_guide_calling_bell"],data:{type:"module",id:"calling_bell",trigger:105,module_name:"Calling Bell",toc_line:"● Calling Bell",line_count:1}}

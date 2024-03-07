@@ -1,0 +1,47 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:potion"
+              ],
+              "nbt": "{gm4_standard_liquids:{potion:\"glowing\"}}"
+            }
+          },
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "minecraft:all_signs"
+              }
+            }
+          }
+        ],
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_liquid_tanks"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "gm4_standard_liquids:util/signs/glow_ink_sign"
+  }
+}

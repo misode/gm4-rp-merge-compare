@@ -1,0 +1,1 @@
+execute if score gm4_cooler_caves load.status matches 1.. run summon marker ~ 736.421522857372 ~ {CustomName:'"gm4_cooler_caves"',Tags:["gm4_guide","gm4_guide_cooler_caves"],data:{type:"module",id:"cooler_caves",trigger:82,module_name:"Cooler Caves",toc_line:"● Cooler Caves",line_count:1}}

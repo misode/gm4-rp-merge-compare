@@ -1,0 +1,1 @@
+execute if score gm4_tinkering_compressors load.status matches 1.. run summon marker ~ 4190.524297100331 ~ {CustomName:'"gm4_tinkering_compressors"',Tags:["gm4_guide","gm4_guide_tinkering_compressors"],data:{type:"module",id:"tinkering_compressors",trigger:52,module_name:"Tinkering Compressors",toc_line:"● Tinkering Compressors",line_count:2}}

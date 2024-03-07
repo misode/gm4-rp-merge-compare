@@ -1,0 +1,1 @@
+execute if score gm4_percurro_shamir load.status matches 1.. run summon marker ~ 3337.509617641432 ~ {CustomName:'"gm4_percurro_shamir"',Tags:["gm4_guide","gm4_guide_percurro_shamir"],data:{type:"expansion",base:"metallurgy",id:"percurro_shamir",trigger:37,module_name:"Percurro Shamir",toc_line:"  ● Percurro Shamir",line_count:1}}

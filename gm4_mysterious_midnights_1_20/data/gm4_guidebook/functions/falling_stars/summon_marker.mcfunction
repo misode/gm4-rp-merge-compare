@@ -1,0 +1,1 @@
+execute if score gm4_mysterious_midnights load.status matches 1.. run summon marker ~ 1246.490760506877 ~ {CustomName:'"gm4_falling_stars"',Tags:["gm4_guide","gm4_guide_falling_stars"],data:{type:"expansion",base:"mysterious_midnights",id:"falling_stars",trigger:43,module_name:"Falling Stars",toc_line:"  ● Falling Stars",line_count:1}}

@@ -1,0 +1,1 @@
+execute if score gm4_audere_shamir load.status matches 1.. run summon marker ~ 367.217754760584 ~ {CustomName:'"gm4_audere_shamir"',Tags:["gm4_guide","gm4_guide_audere_shamir"],data:{type:"expansion",base:"metallurgy",id:"audere_shamir",trigger:8,module_name:"Audere Shamir",toc_line:"  ● Audere Shamir",line_count:1}}

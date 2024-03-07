@@ -1,0 +1,1 @@
+execute if score gm4_mending_tanks load.status matches 1.. run summon marker ~ 2718.712251362882 ~ {CustomName:'"gm4_mending_tanks"',Tags:["gm4_guide","gm4_guide_mending_tanks"],data:{type:"expansion",base:"liquid_tanks",id:"mending_tanks",trigger:13,module_name:"Mending Tanks",toc_line:"  ● Mending Tanks",line_count:1}}

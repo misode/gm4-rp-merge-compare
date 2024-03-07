@@ -1,0 +1,1 @@
+execute if score gm4_block_compressors load.status matches 1.. run summon marker ~ 507.561571027715 ~ {CustomName:'"gm4_block_compressors"',Tags:["gm4_guide","gm4_guide_block_compressors"],data:{type:"module",id:"block_compressors",trigger:54,module_name:"Block Compressors",toc_line:"● Block Compressors",line_count:1}}

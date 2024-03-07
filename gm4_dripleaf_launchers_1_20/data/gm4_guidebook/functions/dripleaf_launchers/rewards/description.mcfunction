@@ -1,0 +1,2 @@
+tellraw @s ["", {"translate": "text.gm4.guidebook.discovered", "fallback": "%1$s has discovered a guidebook page from %2$s", "with": [{"selector": "@s"}, {"text": "[Dripleaf Launchers]", "color": "#4AA0C7", "hoverEvent": {"action": "show_text", "contents": [{"text": "Dripleaf Launchers", "color": "#4AA0C7"}, {"text": "\n"}, {"translate": "text.gm4.guidebook.module_desc.Dripleaf Launchers", "fallback": "Start your own Dripleaf Space Program!", "italic": true, "color": "gray"}]}}]}]
+advancement grant @s only gm4_guidebook:dripleaf_launchers/display/description

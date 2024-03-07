@@ -1,0 +1,1 @@
+execute if score gm4_potion_swords load.status matches 1.. run summon marker ~ 3414.390832451182 ~ {CustomName:'"gm4_potion_swords"',Tags:["gm4_guide","gm4_guide_potion_swords"],data:{type:"module",id:"potion_swords",trigger:62,module_name:"Potion Swords",toc_line:"● Potion Swords",line_count:1}}

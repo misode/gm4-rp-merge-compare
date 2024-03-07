@@ -1,0 +1,68 @@
+{
+  "parent": "gm4_guidebook:root",
+  "criteria": {
+    "enter_end_gateway": {
+      "trigger": "minecraft:enter_block",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "dimension": "minecraft:the_end"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "gamemode": "spectator"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_guidebook"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_end_fishing"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ],
+        "block": "minecraft:end_gateway"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "enter_end_gateway"
+    ]
+  ],
+  "rewards": {
+    "function": "gm4_guidebook:end_fishing/rewards/void_fishing"
+  }
+}

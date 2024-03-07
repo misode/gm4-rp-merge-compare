@@ -1,0 +1,61 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:3420057,HideFlags:2,gm4_zauber_cauldrons:{item:\"crystal\",type:\"poison\"},SkullOwner:{Name:\"[Drop to Fix Item] gm4_zauber_cauldrons:crystal/poison\",Id:[I;-1452394982,-1051244258,-1129278374,2134833677],Properties:{textures:[{Value:\"eyd0ZXh0dXJlcyc6IHsnU0tJTic6IHsndXJsJzogJ2h0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2E0YjY4ZGFiY2JjNDQ4YjBmY2ExNTdhYWU4YTg3YjcwMDlhNmExZmE0Zjg5ZjhkMDVkOTI4MDNkZmY0NTRmMCd9fX0=\"}]}}}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.gm4.zauber_cauldrons.crystal.poison",
+                "fallback": "Crystal of Poison",
+                "color": "yellow",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:horse.jump_strength",
+                  "name": "gm4_unstackable",
+                  "amount": 1,
+                  "operation": "addition",
+                  "slot": "legs"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "translate": "potion.withAmplifier",
+                    "with": [
+                      {
+                        "translate": "effect.minecraft.poison"
+                      },
+                      {
+                        "translate": "potion.potency.1"
+                      }
+                    ],
+                    "color": "red",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+execute if score gm4_double_doors load.status matches 1.. run summon marker ~ 943.90515484876 ~ {CustomName:'"gm4_double_doors"',Tags:["gm4_guide","gm4_guide_double_doors"],data:{type:"module",id:"double_doors",trigger:106,module_name:"Double Doors",toc_line:"● Double Doors",line_count:1}}

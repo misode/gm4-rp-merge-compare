@@ -1,0 +1,34 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:player_head",
+      "nbt": "{CustomModelData:3420060,SkullOwner:{Id:[I;1567268555,400377645,-2090593244,-1749540666],Properties:{textures:[{Value:\"ewogICJ0aW1lc3RhbXAiIDogMTYxNjM4NTc2NTU0MSwKICAicHJvZmlsZUlkIiA6ICI3NzI3ZDM1NjY5Zjk0MTUxODAyM2Q2MmM2ODE3NTkxOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJsaWJyYXJ5ZnJlYWsiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjkxNzBhNzY4ZGY1MDQ1OTcwM2JkYWRkYjNlZGI2OTMyNmJkY2NjY2JmNDQxODM4MDM0YTI0N2I2NDFiN2UyZiIKICAgIH0KICB9Cn0=\"}]}}}"
+    },
+    "title": [
+      "",
+      {
+        "translate": "gui.gm4.guidebook.toast",
+        "fallback": "",
+        "color": "white",
+        "font": "gm4:guidebook"
+      },
+      {
+        "translate": "text.gm4.guidebook.discovered_page",
+        "fallback": "Check your guidebook!",
+        "color": "#4AA0C7",
+        "italic": true
+      }
+    ],
+    "description": "Heart Canisters",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "gm4_guidebook:root",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

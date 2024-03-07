@@ -1,0 +1,1 @@
+execute if score gm4_better_fire load.status matches 1.. run summon marker ~ 455.770248169734 ~ {CustomName:'"gm4_better_fire"',Tags:["gm4_guide","gm4_guide_better_fire"],data:{type:"module",id:"better_fire",trigger:57,module_name:"Better Fire",toc_line:"● Better Fire",line_count:1}}

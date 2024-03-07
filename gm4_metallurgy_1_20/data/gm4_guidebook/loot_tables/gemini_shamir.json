@@ -1,0 +1,109 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:3420001,gm4_guidebook:{lectern:0b,trigger:22},title:\"Gamemode 4 Guidebook\",author:\"Unknown\",generation:3,pages:[]}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "text.gm4.guidebook.title",
+                "fallback": "Gamemode 4 Guidebook",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "$count"
+                },
+                "score": "gm4_guide"
+              }
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "gemini_shamir.pages[0]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": []
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "gemini_shamir.pages[1]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:gemini_shamir/unlock/usage": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "gemini_shamir.locked[0]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:gemini_shamir/unlock/usage": false
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

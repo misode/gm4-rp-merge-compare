@@ -1,0 +1,1 @@
+execute if score gm4_particles_pack load.status matches 1.. run summon marker ~ 3307.180186041202 ~ {CustomName:'"gm4_particles_pack"',Tags:["gm4_guide","gm4_guide_particles_pack"],data:{type:"expansion",base:"better_armour_stands",id:"particles_pack",trigger:6,module_name:"Particles Pack",toc_line:"  ● Particles Pack",line_count:1}}

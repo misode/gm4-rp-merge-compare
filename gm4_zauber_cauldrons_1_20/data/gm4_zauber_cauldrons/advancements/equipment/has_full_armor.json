@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "gm4_zauber_cauldrons:player/equipment/armor/full"
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_zauber_cauldrons"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "gm4_zauber_cauldrons:player/armor/apply_set_bonus"
+  }
+}

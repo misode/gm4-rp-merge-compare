@@ -1,0 +1,1 @@
+execute if score gm4_tunnel_bores load.status matches 1.. run summon marker ~ 4282.062758194015 ~ {CustomName:'"gm4_tunnel_bores"',Tags:["gm4_guide","gm4_guide_tunnel_bores"],data:{type:"module",id:"tunnel_bores",trigger:59,module_name:"Tunnel Bores",toc_line:"● Tunnel Bores",line_count:1}}

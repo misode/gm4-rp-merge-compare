@@ -1,0 +1,89 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gm4_orb_of_ankou:items/soul_essence/bubbly"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:looting",
+          "chances": [
+            3.5e-05,
+            0.00014,
+            0.000875,
+            0.00287,
+            0.006755,
+            0.01316,
+            0.022715,
+            0.03605,
+            0.053795,
+            0.07658,
+            0.105035
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gm4_orb_of_ankou:items/soul_essence/gliding"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:looting",
+          "chances": [
+            3e-05,
+            0.00012,
+            0.00075,
+            0.00246,
+            0.00579,
+            0.01128,
+            0.01947,
+            0.0309,
+            0.04611,
+            0.06564,
+            0.09003
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gm4_orb_of_ankou:items/soul_essence/pricking"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:looting",
+          "chances": [
+            2e-05,
+            8e-05,
+            0.0005,
+            0.00164,
+            0.00386,
+            0.00752,
+            0.01298,
+            0.0206,
+            0.03074,
+            0.04376,
+            0.06002
+          ]
+        }
+      ]
+    }
+  ]
+}

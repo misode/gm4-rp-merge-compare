@@ -1,0 +1,82 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{gm4_metallurgy:{has_shamir:1b,metal:{type:\"bismuth\",amount:[12s],castable:1b},item:\"obsidian_cast\"},CustomModelData:3420053,SkullOwner:{Id:[I;-359255454,30123560,-1513962184,-616842323],Properties:{textures:[{Value:\"ewogICJ0aW1lc3RhbXAiIDogMTYyODAxNDc0OTQ2MSwKICAicHJvZmlsZUlkIiA6ICJiMWMyNWQ0YjMwZDU0N2Y4YTk3NmZlYTllOGU1YzBjMyIsCiAgInByb2ZpbGVOYW1lIiA6ICJvd29FbmRlciIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS82NmM0ODcwYmNiMDdkYWJjMjNiNTZkMzJlNzI5OWI5NTE4ZTU1N2VmMzU2YTNiZGRmNDBkNGM3MDIwYzI3MTdhIgogICAgfQogIH0KfQ==\"}]}}}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.gm4.metallurgy.obsidian_cast",
+                "fallback": "Obsidian Cast",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "translate": "item.gm4.metallurgy.bismuth.red",
+                    "fallback": "Bi",
+                    "italic": false,
+                    "color": "#F47989"
+                  },
+                  {
+                    "translate": "item.gm4.metallurgy.bismuth.orange",
+                    "fallback": "sm",
+                    "italic": false,
+                    "color": "#F5B478"
+                  },
+                  {
+                    "translate": "item.gm4.metallurgy.bismuth.yellow",
+                    "fallback": "ut",
+                    "italic": false,
+                    "color": "#F5DD79"
+                  },
+                  {
+                    "translate": "item.gm4.metallurgy.bismuth.green",
+                    "fallback": "h ",
+                    "italic": false,
+                    "color": "#78F4AE"
+                  },
+                  {
+                    "translate": "item.gm4.metallurgy.bismuth.blue",
+                    "fallback": "Ba",
+                    "italic": false,
+                    "color": "#79D6F5"
+                  },
+                  {
+                    "translate": "item.gm4.metallurgy.bismuth.purple",
+                    "fallback": "nd",
+                    "italic": false,
+                    "color": "#8378F5"
+                  },
+                  {
+                    "translate": "item.gm4.metallurgy.bismuth.magenta",
+                    "fallback": "",
+                    "italic": false,
+                    "color": "#D579F5"
+                  }
+                ],
+                {
+                  "translate": "item.gm4.metallurgy.shamir",
+                  "fallback": "Shamir",
+                  "italic": false,
+                  "color": "aqua"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

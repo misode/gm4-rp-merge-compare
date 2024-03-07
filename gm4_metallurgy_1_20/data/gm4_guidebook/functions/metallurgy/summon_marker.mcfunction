@@ -1,0 +1,1 @@
+execute if score gm4_metallurgy load.status matches 1.. run summon marker ~ 2720.37658849128 ~ {CustomName:'"gm4_metallurgy"',Tags:["gm4_guide","gm4_guide_metallurgy"],data:{type:"base",id:"metallurgy",trigger:28,module_name:"Metallurgy",toc_line:"● Metallurgy",line_count:1}}

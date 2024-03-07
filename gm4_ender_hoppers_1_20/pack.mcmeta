@@ -1,0 +1,30 @@
+{
+  "pack": {
+    "pack_format": 15,
+    "description": [
+      "Ender Hoppers",
+      "\n",
+      {
+        "text": "Gamemode 4 for 1.20",
+        "color": "#4AA0C7"
+      }
+    ],
+    "supported_formats": {
+      "min_inclusive": 15,
+      "max_inclusive": 26
+    }
+  },
+  "overlays": {
+    "entries": [
+      {
+        "formats": {
+          "min_inclusive": 26,
+          "max_inclusive": 26
+        },
+        "directory": "overlay_26"
+      }
+    ]
+  },
+  "version": "1.4.0",
+  "commit_hash": "5f07d3406"
+}

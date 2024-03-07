@@ -1,0 +1,1 @@
+execute if score gm4_disassemblers load.status matches 1.. run summon marker ~ 897.579163823216 ~ {CustomName:'"gm4_disassemblers"',Tags:["gm4_guide","gm4_guide_disassemblers"],data:{type:"module",id:"disassemblers",trigger:81,module_name:"Disassemblers",toc_line:"● Disassemblers",line_count:1}}

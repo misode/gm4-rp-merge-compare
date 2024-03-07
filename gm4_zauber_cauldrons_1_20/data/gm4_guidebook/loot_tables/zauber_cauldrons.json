@@ -1,0 +1,869 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:3420001,gm4_guidebook:{lectern:0b,trigger:53},title:\"Gamemode 4 Guidebook\",author:\"Unknown\",generation:3,pages:[]}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "text.gm4.guidebook.title",
+                "fallback": "Gamemode 4 Guidebook",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "$count"
+                },
+                "score": "gm4_guide"
+              }
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[0]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": []
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[1]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:zauber_cauldrons/unlock/creation": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:zauber_cauldrons/unlock/creation": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[2]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:zauber_cauldrons/unlock/recipes": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:zauber_cauldrons/unlock/recipes": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[3]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[4]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[5]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[6]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:zauber_cauldrons/unlock/potions": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:zauber_cauldrons/unlock/potions": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[7]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[8]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:zauber_cauldrons/unlock/enchanted_shard": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:zauber_cauldrons/unlock/enchanted_shard": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[9]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[10]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[11]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:zauber_cauldrons/unlock/armor": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:zauber_cauldrons/unlock/armor": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[12]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:zauber_cauldrons/unlock/crystals": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:zauber_cauldrons/unlock/crystals": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[13]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[14]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[15]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[16]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:zauber_cauldrons/unlock/luck": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:zauber_cauldrons/unlock/luck": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[17]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[18]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:zauber_cauldrons/unlock/extra_ingredients": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:zauber_cauldrons/unlock/extra_ingredients": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[19]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[20]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[21]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[22]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:zauber_cauldrons/unlock/magicol_creation": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:zauber_cauldrons/unlock/magicol_creation": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[23]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[24]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[25]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[26]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[27]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:zauber_cauldrons/unlock/magicol_usage": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:zauber_cauldrons/unlock/magicol_usage": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[28]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[29]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[30]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.pages[31]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:zauber_cauldrons/unlock/wormholes": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "zauber_cauldrons.locked[0]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:zauber_cauldrons/unlock/wormholes": false
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

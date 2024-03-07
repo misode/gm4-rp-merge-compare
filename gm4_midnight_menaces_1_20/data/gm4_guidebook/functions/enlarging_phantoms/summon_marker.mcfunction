@@ -1,0 +1,1 @@
+execute if score gm4_midnight_menaces load.status matches 1.. run summon marker ~ 1139.620719129263 ~ {CustomName:'"gm4_enlarging_phantoms"',Tags:["gm4_guide","gm4_guide_enlarging_phantoms"],data:{type:"expansion",base:"mysterious_midnights",id:"enlarging_phantoms",trigger:101,module_name:"Enlarging Phantoms",toc_line:"  ● Enlarging Phantoms",line_count:1}}

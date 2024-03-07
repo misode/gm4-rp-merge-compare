@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "break": {
+      "trigger": "minecraft:bee_nest_destroyed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_beehive_inspector"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "gm4_beehive_inspector:find_item"
+  }
+}

@@ -1,0 +1,1 @@
+execute if score gm4_spawner_minecarts load.status matches 1.. run summon marker ~ 4034.469592678415 ~ {CustomName:'"gm4_spawner_minecarts"',Tags:["gm4_guide","gm4_guide_spawner_minecarts"],data:{type:"module",id:"spawner_minecarts",trigger:12,module_name:"Spawner Minecarts",toc_line:"● Spawner Minecarts",line_count:1}}

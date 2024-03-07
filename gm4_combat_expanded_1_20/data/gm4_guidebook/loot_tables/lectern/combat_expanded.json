@@ -1,0 +1,781 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:3420001,gm4_guidebook:{lectern:1b,trigger:115},title:\"Gamemode 4 Guidebook\",author:\"Unknown\",generation:3,pages:[]}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "text.gm4.guidebook.title",
+                "fallback": "Gamemode 4 Guidebook",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "source": "lectern_front_matter[]",
+                  "target": "pages",
+                  "op": "append"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "combat_expanded.lectern[0]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "combat_expanded.lectern[1]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:combat_expanded/unlock/description": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "combat_expanded.locked[3]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "combat_expanded.locked[1]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:combat_expanded/unlock/description": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "combat_expanded.lectern[2]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:combat_expanded/unlock/dark_modifier": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "combat_expanded.locked[1]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:combat_expanded/unlock/dark_modifier": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "combat_expanded.lectern[3]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:combat_expanded/unlock/burned_modifier": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "combat_expanded.locked[1]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:combat_expanded/unlock/burned_modifier": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "combat_expanded.lectern[4]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:combat_expanded/unlock/deep_modifier": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "combat_expanded.locked[1]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:combat_expanded/unlock/deep_modifier": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "combat_expanded.lectern[5]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:combat_expanded/unlock/flowering_modifier": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "combat_expanded.locked[1]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:combat_expanded/unlock/flowering_modifier": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "combat_expanded.lectern[6]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:combat_expanded/unlock/growth_modifier": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "combat_expanded.locked[1]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:combat_expanded/unlock/growth_modifier": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "combat_expanded.lectern[7]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:combat_expanded/unlock/mountainous_modifier": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "combat_expanded.locked[1]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:combat_expanded/unlock/mountainous_modifier": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "combat_expanded.lectern[8]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:combat_expanded/unlock/reef_modifier": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "combat_expanded.locked[1]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:combat_expanded/unlock/reef_modifier": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "combat_expanded.lectern[9]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:combat_expanded/unlock/snowy_modifier": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "combat_expanded.locked[1]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:combat_expanded/unlock/snowy_modifier": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "combat_expanded.lectern[10]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:combat_expanded/unlock/toxic_modifier": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "combat_expanded.locked[1]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:combat_expanded/unlock/toxic_modifier": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "combat_expanded.lectern[11]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "combat_expanded.lectern[12]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "combat_expanded.lectern[13]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "combat_expanded.lectern[14]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "combat_expanded.lectern[15]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "combat_expanded.lectern[16]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "combat_expanded.lectern[17]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "combat_expanded.lectern[18]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "combat_expanded.lectern[19]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "combat_expanded.lectern[20]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "combat_expanded.lectern[21]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:combat_expanded/unlock/weapons_and_armor": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "combat_expanded.locked[1]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "combat_expanded.locked[1]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "combat_expanded.locked[1]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "combat_expanded.locked[1]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "combat_expanded.locked[1]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "combat_expanded.locked[1]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "combat_expanded.locked[1]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "combat_expanded.locked[1]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "combat_expanded.locked[1]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "combat_expanded.locked[1]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "combat_expanded.locked[1]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:combat_expanded/unlock/weapons_and_armor": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "source": "blank",
+                  "target": "pages",
+                  "op": "append"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "display": {
+    "icon": {
+      "item": "tnt",
+      "nbt": "{CustomModelData:3420002}"
+    },
+    "title": {
+      "translate": "advancement.gm4.disassemblers.title",
+      "fallback": "Clever Decrafting"
+    },
+    "description": {
+      "translate": "advancement.gm4.disassemblers.description",
+      "fallback": "Craft a Disassembler",
+      "color": "gray"
+    }
+  },
+  "parent": "gm4:custom_crafters",
+  "criteria": {
+    "obtain_disassembler": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:player_head"
+            ],
+            "nbt": "{gm4_machines:{id:\"disassembler\"}}"
+          }
+        ],
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_disassemblers"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  }
+}

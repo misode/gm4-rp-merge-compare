@@ -1,0 +1,1 @@
+execute if score gm4_midnight_menaces load.status matches 1.. run summon marker ~ 4006.118556280305 ~ {CustomName:'"gm4_slime_fests"',Tags:["gm4_guide","gm4_guide_slime_fests"],data:{type:"expansion",base:"mysterious_midnights",id:"slime_fests",trigger:100,module_name:"Slime Fests",toc_line:"  ● Slime Fests",line_count:1}}

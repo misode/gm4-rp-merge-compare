@@ -1,0 +1,1 @@
+execute if score gm4_liquid_minecarts load.status matches 1.. run summon marker ~ 2544.348483314364 ~ {CustomName:'"gm4_liquid_minecarts"',Tags:["gm4_guide","gm4_guide_liquid_minecarts"],data:{type:"expansion",base:"liquid_tanks",id:"liquid_minecarts",trigger:47,module_name:"Liquid Minecarts",toc_line:"  ● Liquid Minecarts",line_count:1}}

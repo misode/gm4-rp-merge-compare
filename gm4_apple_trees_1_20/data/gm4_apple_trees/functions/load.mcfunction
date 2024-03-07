@@ -1,0 +1,16 @@
+execute if score gm4 load.status matches 1 if score gm4_minor load.status matches 4.. if score gm4_trades load.status matches 1 if score gm4_trades_minor load.status matches 3.. if score gm4_trees load.status matches 1 if score gm4_trees_minor load.status matches 0.. run scoreboard players set gm4_apple_trees load.status 2
+execute if score gm4 load.status matches 1 if score gm4_minor load.status matches 4.. if score gm4_trades load.status matches 1 if score gm4_trades_minor load.status matches 3.. if score gm4_trees load.status matches 1 if score gm4_trees_minor load.status matches 0.. run scoreboard players set gm4_apple_trees_minor load.status 2
+execute unless score gm4 load.status matches 1.. run data modify storage gm4:log queue append value {type:"missing",module:"Apple Trees",id:"gm4_apple_trees",require:"Gamemode 4 Base",require_id:"gm4"}
+execute if score gm4 load.status matches 1.. unless score gm4 load.status matches 1 run data modify storage gm4:log queue append value {type:"version_conflict",module:"Apple Trees",id:"gm4_apple_trees",require:"Gamemode 4 Base",require_id:"gm4",require_ver:"1.4.0"}
+execute if score gm4 load.status matches 1 unless score gm4_minor load.status matches 4.. run data modify storage gm4:log queue append value {type:"version_conflict",module:"Apple Trees",id:"gm4_apple_trees",require:"Gamemode 4 Base",require_id:"gm4",require_ver:"1.4.0"}
+execute unless score gm4_trades load.status matches 1.. run data modify storage gm4:log queue append value {type:"missing",module:"Apple Trees",id:"gm4_apple_trees",require:"lib_trades",require_id:"gm4_trades"}
+execute if score gm4_trades load.status matches 1.. unless score gm4_trades load.status matches 1 run data modify storage gm4:log queue append value {type:"version_conflict",module:"Apple Trees",id:"gm4_apple_trees",require:"lib_trades",require_id:"gm4_trades",require_ver:"1.3.0"}
+execute if score gm4_trades load.status matches 1 unless score gm4_trades_minor load.status matches 3.. run data modify storage gm4:log queue append value {type:"version_conflict",module:"Apple Trees",id:"gm4_apple_trees",require:"lib_trades",require_id:"gm4_trades",require_ver:"1.3.0"}
+execute unless score gm4_trees load.status matches 1.. run data modify storage gm4:log queue append value {type:"missing",module:"Apple Trees",id:"gm4_apple_trees",require:"lib_trees",require_id:"gm4_trees"}
+execute if score gm4_trees load.status matches 1.. unless score gm4_trees load.status matches 1 run data modify storage gm4:log queue append value {type:"version_conflict",module:"Apple Trees",id:"gm4_apple_trees",require:"lib_trees",require_id:"gm4_trees",require_ver:"1.0.0"}
+execute if score gm4_trees load.status matches 1 unless score gm4_trees_minor load.status matches 0.. run data modify storage gm4:log queue append value {type:"version_conflict",module:"Apple Trees",id:"gm4_apple_trees",require:"lib_trees",require_id:"gm4_trees",require_ver:"1.0.0"}
+execute unless score gm4_apple_trees load.status matches 1.. run scoreboard players set gm4_apple_trees load.status -1
+
+execute if score gm4_apple_trees load.status matches 2 run function gm4_apple_trees:init
+execute unless score gm4_apple_trees load.status matches 2 run schedule clear gm4_apple_trees:main
+execute unless score gm4_apple_trees load.status matches 2 run schedule clear gm4_apple_trees:slow_clock

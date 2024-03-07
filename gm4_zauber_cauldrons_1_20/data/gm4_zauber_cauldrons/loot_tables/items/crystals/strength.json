@@ -1,0 +1,95 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:3420058,HideFlags:2,gm4_zauber_cauldrons:{item:\"crystal\",type:\"strength\"},SkullOwner:{Name:\"[Drop to Fix Item] gm4_zauber_cauldrons:crystal/strength\",Id:[I;944420826,983911599,-1709524351,1416885906],Properties:{textures:[{Value:\"eyd0ZXh0dXJlcyc6IHsnU0tJTic6IHsndXJsJzogJ2h0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTY5M2YwYjc1NGUyNzcwMGNiYWM2MGFjOTMwMGI2YzY2M2NmZDVlMjc1YjkwZjkyYmZmNjczNjY3YzViOWY1Nid9fX0=\"}]}}}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.gm4.zauber_cauldrons.crystal.strength",
+                "fallback": "Crystal of Strength ",
+                "color": "yellow",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:horse.jump_strength",
+                  "name": "gm4_unstackable",
+                  "amount": 1,
+                  "operation": "addition",
+                  "slot": "legs"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "translate": "potion.withAmplifier",
+                    "with": [
+                      {
+                        "translate": "effect.minecraft.strength"
+                      },
+                      {
+                        "translate": "potion.potency.1"
+                      }
+                    ],
+                    "color": "blue",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "translate": "potion.withAmplifier",
+                    "with": [
+                      {
+                        "translate": "effect.minecraft.fire_resistance"
+                      },
+                      {
+                        "translate": "potion.potency.0"
+                      }
+                    ],
+                    "color": "blue",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": ""
+                },
+                {
+                  "translate": "potion.whenDrank",
+                  "color": "dark_purple",
+                  "italic": false
+                },
+                {
+                  "translate": "attribute.modifier.plus.0",
+                  "with": [
+                    "6",
+                    {
+                      "translate": "attribute.name.generic.attack_damage"
+                    }
+                  ],
+                  "color": "blue",
+                  "italic": false
+                }
+              ],
+              "replace": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

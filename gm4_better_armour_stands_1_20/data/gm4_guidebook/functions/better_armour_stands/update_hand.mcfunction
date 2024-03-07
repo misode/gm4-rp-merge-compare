@@ -1,0 +1,2 @@
+execute if score @s gm4_guide matches 74 if score gm4_better_armour_stands load.status matches 1.. run loot replace entity @s[predicate=gm4_guidebook:book_in_mainhand] weapon.mainhand loot gm4_guidebook:better_armour_stands
+execute if score @s gm4_guide matches 74 if score gm4_better_armour_stands load.status matches 1.. run loot replace entity @s[predicate=gm4_guidebook:book_in_offhand] weapon.offhand loot gm4_guidebook:better_armour_stands

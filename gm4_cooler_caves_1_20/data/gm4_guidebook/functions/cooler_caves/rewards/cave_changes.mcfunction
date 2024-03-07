@@ -1,0 +1,2 @@
+tellraw @s ["", {"translate": "text.gm4.guidebook.discovered", "fallback": "%1$s has discovered a guidebook page from %2$s", "with": [{"selector": "@s"}, {"text": "[Cooler Caves]", "color": "#4AA0C7", "hoverEvent": {"action": "show_text", "contents": [{"text": "Cooler Caves", "color": "#4AA0C7"}, {"text": "\n"}, {"translate": "text.gm4.guidebook.module_desc.Cooler Caves", "fallback": "A custom terrain expansion pack that makes biome specific caves and mineshafts", "italic": true, "color": "gray"}]}}]}]
+advancement grant @s only gm4_guidebook:cooler_caves/display/cave_changes

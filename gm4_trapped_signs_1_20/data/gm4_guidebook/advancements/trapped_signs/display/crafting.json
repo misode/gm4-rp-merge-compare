@@ -1,0 +1,34 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:oak_sign",
+      "nbt": "{CustomModelData:3420003}"
+    },
+    "title": [
+      "",
+      {
+        "translate": "gui.gm4.guidebook.toast",
+        "fallback": "",
+        "color": "white",
+        "font": "gm4:guidebook"
+      },
+      {
+        "translate": "text.gm4.guidebook.discovered_page",
+        "fallback": "Check your guidebook!",
+        "color": "#4AA0C7",
+        "italic": true
+      }
+    ],
+    "description": "Trapped Signs",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "gm4_guidebook:root",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

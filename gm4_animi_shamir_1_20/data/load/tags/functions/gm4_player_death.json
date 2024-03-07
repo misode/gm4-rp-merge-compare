@@ -1,0 +1,6 @@
+{
+  "values": [
+    "#load:gm4_player_death/enumerate",
+    "#load:gm4_player_death/resolve_load"
+  ]
+}

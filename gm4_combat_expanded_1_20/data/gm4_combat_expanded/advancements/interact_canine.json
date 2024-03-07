@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "feed": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "wolf",
+          "nbt": "{Tags:[\"gm4_ce_wolf\"]}"
+        },
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_combat_expanded"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "gm4_combat_expanded:armor/modifier/type/canine/wolf_interact_check"
+  }
+}

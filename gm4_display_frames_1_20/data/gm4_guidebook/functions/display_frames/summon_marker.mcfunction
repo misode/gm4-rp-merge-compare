@@ -1,0 +1,1 @@
+execute if score gm4_display_frames load.status matches 1.. run summon marker ~ 897.733109399926 ~ {CustomName:'"gm4_display_frames"',Tags:["gm4_guide","gm4_guide_display_frames"],data:{type:"module",id:"display_frames",trigger:5,module_name:"Display Frames",toc_line:"● Display Frames",line_count:1}}

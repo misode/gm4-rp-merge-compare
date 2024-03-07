@@ -1,0 +1,1 @@
+execute if score gm4_xp_storage load.status matches 1.. run summon marker ~ 5068.978168549095 ~ {CustomName:'"gm4_xp_storage"',Tags:["gm4_guide","gm4_guide_xp_storage"],data:{type:"module",id:"xp_storage",trigger:48,module_name:"XP Storage",toc_line:"● XP Storage",line_count:1}}

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:red_mushroom",
+      "nbt": "{CMD:3240001}"
+    },
+    "title": "Things are grim indeed...",
+    "description": "Oh no, did I forget about those mushrooms?",
+    "frame": "challenge",
+    "hidden": true
+  },
+  "parent": "gm4:root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_shroomites"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  }
+}

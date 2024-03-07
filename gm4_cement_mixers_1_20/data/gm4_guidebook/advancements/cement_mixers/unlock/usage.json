@@ -1,0 +1,142 @@
+{
+  "parent": "gm4_guidebook:root",
+  "criteria": {
+    "obtain_liquid_tank": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:player_head"
+            ],
+            "nbt": "{gm4_machines:{id:\"liquid_tank\"}}"
+          }
+        ],
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "gamemode": "spectator"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_guidebook"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_cement_mixers"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    },
+    "obtain_concrete_powder": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:black_concrete_powder",
+              "minecraft:blue_concrete_powder",
+              "minecraft:brown_concrete_powder",
+              "minecraft:cyan_concrete_powder",
+              "minecraft:gray_concrete_powder",
+              "minecraft:green_concrete_powder",
+              "minecraft:light_blue_concrete_powder",
+              "minecraft:light_gray_concrete_powder",
+              "minecraft:lime_concrete_powder",
+              "minecraft:magenta_concrete_powder",
+              "minecraft:orange_concrete_powder",
+              "minecraft:pink_concrete_powder",
+              "minecraft:purple_concrete_powder",
+              "minecraft:red_concrete_powder",
+              "minecraft:white_concrete_powder",
+              "minecraft:yellow_concrete_powder"
+            ]
+          }
+        ],
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "gamemode": "spectator"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_guidebook"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_cement_mixers"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "obtain_concrete_powder"
+    ],
+    [
+      "obtain_liquid_tank"
+    ]
+  ],
+  "rewards": {
+    "function": "gm4_guidebook:cement_mixers/rewards/usage"
+  }
+}

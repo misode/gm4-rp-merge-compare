@@ -1,0 +1,41 @@
+{
+  "display": {
+    "icon": {
+      "item": "pufferfish",
+      "nbt": "{CustomModelData:3420001}"
+    },
+    "title": {
+      "translate": "advancement.gm4.live_catch.title",
+      "fallback": "Watch Out!"
+    },
+    "description": {
+      "translate": "advancement.gm4.live_catch.description",
+      "fallback": "Catch a pufferfish to the face.",
+      "color": "gray"
+    }
+  },
+  "parent": "gm4:root",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_live_catch"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  }
+}

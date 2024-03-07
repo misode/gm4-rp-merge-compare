@@ -1,0 +1,41 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:player_head",
+      "nbt": "{CustomModelData:3420050,SkullOwner:{Id:[I;1961294324,1560605478,885901402,915511979],Properties:{textures:[{Value:\"ewogICJ0aW1lc3RhbXAiIDogMTYyODc4ODAzNjY3NCwKICAicHJvZmlsZUlkIiA6ICI2MjM5ZWRhM2ExY2Y0YjJiYWMyODk2NGQ0NmNlOWVhOSIsCiAgInByb2ZpbGVOYW1lIiA6ICJGYXRGYXRHb2QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGQ3MTQ5OTY0MDNlMTNhNGE4ZTc4OTQ0OWNjN2I5OGRhMmI4NDc1NTRjNDgwZGUyMDUxOTcwYjIxODIzZGJkOSIKICAgIH0KICB9Cn0=\"}]}}}"
+    },
+    "title": {
+      "translate": "advancement.gm4.metallurgy.cast.title",
+      "fallback": "Firebender"
+    },
+    "description": {
+      "translate": "advancement.gm4.metallurgy.cast.description",
+      "fallback": "Create a mould and add some metal.",
+      "color": "gray"
+    }
+  },
+  "parent": "gm4:metallurgy_blast_ore",
+  "criteria": {
+    "metallurgy_cast": {
+      "trigger": "minecraft:impossible",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_metallurgy"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+execute if score gm4_dripleaf_launchers load.status matches 1.. run summon marker ~ 963.539236036677 ~ {CustomName:'"gm4_dripleaf_launchers"',Tags:["gm4_guide","gm4_guide_dripleaf_launchers"],data:{type:"module",id:"dripleaf_launchers",trigger:108,module_name:"Dripleaf Launchers",toc_line:"● Dripleaf Launchers",line_count:1}}

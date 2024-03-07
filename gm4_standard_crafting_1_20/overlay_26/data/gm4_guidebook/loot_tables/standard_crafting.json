@@ -1,0 +1,684 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:3420001,gm4_guidebook:{lectern:0b, trigger:93},title:\"Gamemode 4 Guidebook\",author:Unknown,generation:3,pages:[]}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "text.gm4.guidebook.title",
+                "fallback": "Gamemode 4 Guidebook",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "$count"
+                },
+                "score": "gm4_guide"
+              }
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "standard_crafting.pages[0]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "standard_crafting.pages[1]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "standard_crafting.pages[2]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:standard_crafting/unlock/default_recipes": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "standard_crafting.locked[2]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "standard_crafting.locked[0]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "standard_crafting.locked[0]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:standard_crafting/unlock/default_recipes": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "standard_crafting.pages[3]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:standard_crafting/unlock/gravel_recipe": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "standard_crafting.locked[0]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:standard_crafting/unlock/gravel_recipe": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "standard_crafting.pages[4]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:standard_crafting/unlock/sand_recipe": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "standard_crafting.locked[0]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:standard_crafting/unlock/sand_recipe": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "standard_crafting.pages[5]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "standard_crafting.pages[6]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:standard_crafting/unlock/red_sand_recipe": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "standard_crafting.locked[0]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "standard_crafting.locked[0]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:standard_crafting/unlock/red_sand_recipe": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "standard_crafting.pages[7]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:standard_crafting/unlock/amethyst_recipe": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "standard_crafting.locked[0]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:standard_crafting/unlock/amethyst_recipe": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "standard_crafting.pages[8]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:standard_crafting/unlock/dripstone_recipe": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "standard_crafting.locked[0]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:standard_crafting/unlock/dripstone_recipe": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "standard_crafting.pages[9]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:standard_crafting/unlock/quartz_recipe": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "standard_crafting.locked[0]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:standard_crafting/unlock/quartz_recipe": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "standard_crafting.pages[10]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:standard_crafting/unlock/string_recipe": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "standard_crafting.locked[0]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:standard_crafting/unlock/string_recipe": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "standard_crafting.pages[11]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:standard_crafting/unlock/cobweb_recipe": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "standard_crafting.locked[0]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:standard_crafting/unlock/cobweb_recipe": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "standard_crafting.pages[12]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:standard_crafting/unlock/horse_armor_recipe": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "standard_crafting.locked[0]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:standard_crafting/unlock/horse_armor_recipe": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "standard_crafting.pages[13]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:standard_crafting/unlock/enchanted_golden_apple_recipe": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "standard_crafting.locked[0]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:standard_crafting/unlock/enchanted_golden_apple_recipe": false
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

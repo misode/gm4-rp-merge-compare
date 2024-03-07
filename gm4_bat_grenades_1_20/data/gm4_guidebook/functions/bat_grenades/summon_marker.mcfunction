@@ -1,0 +1,1 @@
+execute if score gm4_bat_grenades load.status matches 1.. run summon marker ~ 425.13672765259 ~ {CustomName:'"gm4_bat_grenades"',Tags:["gm4_guide","gm4_guide_bat_grenades"],data:{type:"module",id:"bat_grenades",trigger:90,module_name:"Bat Grenades",toc_line:"● Bat Grenades",line_count:1}}

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gm4_orb_of_ankou:items/soul_essence/rushing"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:looting",
+          "chances": [
+            2.8e-05,
+            0.000112,
+            0.0007,
+            0.002296,
+            0.005404,
+            0.010528,
+            0.018172,
+            0.02884,
+            0.043036,
+            0.061264,
+            0.084028
+          ]
+        }
+      ]
+    }
+  ]
+}

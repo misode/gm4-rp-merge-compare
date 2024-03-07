@@ -1,0 +1,4 @@
+tellraw @s ["", {"translate": "text.gm4.guidebook.discovered", "fallback": "%1$s has discovered a guidebook page from %2$s", "with": [{"selector": "@s"}, {"text": "[Boots of Ostara]", "color": "#4AA0C7", "hoverEvent": {"action": "show_text", "contents": [{"text": "Boots of Ostara", "color": "#4AA0C7"}, {"text": "\n"}, {"translate": "text.gm4.guidebook.module_desc.Boots of Ostara", "fallback": "A pair of boots every gardener would love to have! Boots of Ostara allow you to easily spread Grass and Moss, and they even stop the Desire Lines module from creating that pesky dirt.", "italic": true, "color": "gray"}]}}]}]
+advancement grant @s only gm4_guidebook:boots_of_ostara/display/usage
+advancement grant @s only gm4_guidebook:boots_of_ostara/unlock/crafting
+advancement grant @s only gm4_guidebook:boots_of_ostara/unlock/crafting-desire_lines

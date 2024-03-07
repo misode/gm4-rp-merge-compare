@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gm4_orb_of_ankou:items/soul_essence/bounding"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:looting",
+          "chances": [
+            9e-05,
+            0.00036,
+            0.00225,
+            0.00738,
+            0.01737,
+            0.03384,
+            0.05841,
+            0.0927,
+            0.13833,
+            0.19692,
+            0.27009
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+execute if score gm4_tnt_landmines load.status matches 1.. run summon marker ~ 4230.355712344628 ~ {CustomName:'"gm4_tnt_landmines"',Tags:["gm4_guide","gm4_guide_tnt_landmines"],data:{type:"module",id:"tnt_landmines",trigger:39,module_name:"TNT Landmines",toc_line:"● TNT Landmines",line_count:1}}

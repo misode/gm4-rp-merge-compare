@@ -1,0 +1,1 @@
+execute if score gm4_soul_glass load.status matches 1.. run summon marker ~ 4032.374901627249 ~ {CustomName:'"gm4_soul_glass"',Tags:["gm4_guide","gm4_guide_soul_glass"],data:{type:"module",id:"soul_glass",trigger:58,module_name:"Soul Glass",toc_line:"● Soul Glass",line_count:1}}

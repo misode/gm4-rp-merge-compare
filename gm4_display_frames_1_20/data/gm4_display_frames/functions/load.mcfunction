@@ -1,0 +1,12 @@
+execute if score gm4 load.status matches 1 if score gm4_minor load.status matches 4.. if score gm4_potion_tracking load.status matches 1 if score gm4_potion_tracking_minor load.status matches 0.. run scoreboard players set gm4_display_frames load.status 1
+execute if score gm4 load.status matches 1 if score gm4_minor load.status matches 4.. if score gm4_potion_tracking load.status matches 1 if score gm4_potion_tracking_minor load.status matches 0.. run scoreboard players set gm4_display_frames_minor load.status 3
+execute unless score gm4 load.status matches 1.. run data modify storage gm4:log queue append value {type:"missing",module:"Display Frames",id:"gm4_display_frames",require:"Gamemode 4 Base",require_id:"gm4"}
+execute if score gm4 load.status matches 1.. unless score gm4 load.status matches 1 run data modify storage gm4:log queue append value {type:"version_conflict",module:"Display Frames",id:"gm4_display_frames",require:"Gamemode 4 Base",require_id:"gm4",require_ver:"1.4.0"}
+execute if score gm4 load.status matches 1 unless score gm4_minor load.status matches 4.. run data modify storage gm4:log queue append value {type:"version_conflict",module:"Display Frames",id:"gm4_display_frames",require:"Gamemode 4 Base",require_id:"gm4",require_ver:"1.4.0"}
+execute unless score gm4_potion_tracking load.status matches 1.. run data modify storage gm4:log queue append value {type:"missing",module:"Display Frames",id:"gm4_display_frames",require:"lib_potion_tracking",require_id:"gm4_potion_tracking"}
+execute if score gm4_potion_tracking load.status matches 1.. unless score gm4_potion_tracking load.status matches 1 run data modify storage gm4:log queue append value {type:"version_conflict",module:"Display Frames",id:"gm4_display_frames",require:"lib_potion_tracking",require_id:"gm4_potion_tracking",require_ver:"1.0.0"}
+execute if score gm4_potion_tracking load.status matches 1 unless score gm4_potion_tracking_minor load.status matches 0.. run data modify storage gm4:log queue append value {type:"version_conflict",module:"Display Frames",id:"gm4_display_frames",require:"lib_potion_tracking",require_id:"gm4_potion_tracking",require_ver:"1.0.0"}
+execute unless score gm4_display_frames load.status matches 1.. run scoreboard players set gm4_display_frames load.status -1
+
+execute if score gm4_display_frames load.status matches 1 run function gm4_display_frames:init
+execute unless score gm4_display_frames load.status matches 1 run schedule clear gm4_display_frames:main

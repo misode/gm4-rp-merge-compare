@@ -1,0 +1,47 @@
+{
+  "display": {
+    "icon": {
+      "item": "lectern",
+      "nbt": "{CustomModelData:3420001}"
+    },
+    "title": {
+      "translate": "advancement.gm4.book_binders.title",
+      "fallback": "Ain't Got Rhythm"
+    },
+    "description": {
+      "translate": "advancement.gm4.book_binders.description",
+      "fallback": "Set up a Book Binder",
+      "color": "gray"
+    }
+  },
+  "parent": "gm4:root",
+  "criteria": {
+    "gm4_place_book_binder": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "minecraft:lectern"
+          }
+        ],
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_book_binders"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  }
+}

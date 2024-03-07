@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:lightning_strike",
+      "conditions": {
+        "lightning": {
+          "distance": {
+            "absolute": {
+              "min": 0,
+              "max": 64
+            }
+          }
+        },
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_lightning_in_a_bottle"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "gm4_lightning_in_a_bottle:lightning/locate"
+  }
+}

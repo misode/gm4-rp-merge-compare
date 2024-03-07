@@ -1,0 +1,78 @@
+{
+  "parent": "gm4_guidebook:root",
+  "criteria": {
+    "obtain_fortune_shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:diamond_shovel",
+              "minecraft:golden_shovel",
+              "minecraft:iron_shovel",
+              "minecraft:netherite_shovel",
+              "minecraft:stone_shovel",
+              "minecraft:wooden_shovel"
+            ],
+            "enchantments": [
+              {
+                "enchantment": "minecraft:fortune"
+              }
+            ]
+          }
+        ],
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "gamemode": "spectator"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_guidebook"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_sunken_treasure"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "obtain_fortune_shovel"
+    ]
+  ],
+  "rewards": {
+    "function": "gm4_guidebook:sunken_treasure/rewards/details"
+  }
+}

@@ -1,0 +1,1 @@
+execute if score gm4_vecto_shamir load.status matches 1.. run summon marker ~ 4568.795477398233 ~ {CustomName:'"gm4_vecto_shamir"',Tags:["gm4_guide","gm4_guide_vecto_shamir"],data:{type:"expansion",base:"metallurgy",id:"vecto_shamir",trigger:95,module_name:"Vecto Shamir",toc_line:"  ● Vecto Shamir",line_count:1}}

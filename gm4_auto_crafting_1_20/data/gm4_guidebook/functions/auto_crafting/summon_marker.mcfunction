@@ -1,0 +1,1 @@
+execute if score gm4_auto_crafting load.status matches 1.. run summon marker ~ 371.83559651321 ~ {CustomName:'"gm4_auto_crafting"',Tags:["gm4_guide","gm4_guide_auto_crafting"],data:{type:"module",id:"auto_crafting",trigger:104,module_name:"Auto Crafting",toc_line:"● Auto Crafting",line_count:1}}

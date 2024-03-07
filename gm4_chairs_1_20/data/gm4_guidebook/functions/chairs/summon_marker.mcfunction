@@ -1,0 +1,1 @@
+execute if score gm4_chairs load.status matches 1.. run summon marker ~ 679.061995077186 ~ {CustomName:'"gm4_chairs"',Tags:["gm4_guide","gm4_guide_chairs"],data:{type:"module",id:"chairs",trigger:73,module_name:"Chairs",toc_line:"● Chairs",line_count:1}}

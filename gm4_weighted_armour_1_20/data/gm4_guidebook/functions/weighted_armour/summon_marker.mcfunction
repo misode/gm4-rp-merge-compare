@@ -1,0 +1,1 @@
+execute if score gm4_weighted_armour load.status matches 1.. run summon marker ~ 4776.242502981829 ~ {CustomName:'"gm4_weighted_armour"',Tags:["gm4_guide","gm4_guide_weighted_armour"],data:{type:"module",id:"weighted_armour",trigger:68,module_name:"Weighted Armour",toc_line:"● Weighted Armour",line_count:1}}

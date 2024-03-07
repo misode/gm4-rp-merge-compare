@@ -1,0 +1,17 @@
+{
+  "values": [
+    "gm4_guidebook:arborenda_shamir/setup_storage",
+    "gm4_guidebook:defuse_shamir/setup_storage",
+    "gm4_guidebook:ender_bolt_shamir/setup_storage",
+    "gm4_guidebook:forterra_shamir/setup_storage",
+    "gm4_guidebook:gemini_shamir/setup_storage",
+    "gm4_guidebook:hypexperia_shamir/setup_storage",
+    "gm4_guidebook:infinitas_shamir/setup_storage",
+    "gm4_guidebook:metallurgy/setup_storage",
+    "gm4_guidebook:moneo_shamir/setup_storage",
+    "gm4_guidebook:musical_shamir/setup_storage",
+    "gm4_guidebook:sensus_shamir/setup_storage",
+    "gm4_guidebook:tinker_shamir/setup_storage",
+    "gm4_guidebook:vibro_shamir/setup_storage"
+  ]
+}

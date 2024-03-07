@@ -1,0 +1,1 @@
+execute if score gm4_shroomites load.status matches 1.. run summon marker ~ 3978.182929656843 ~ {CustomName:'"gm4_shroomites"',Tags:["gm4_guide","gm4_guide_shroomites"],data:{type:"module",id:"shroomites",trigger:2,module_name:"Shroomites",toc_line:"● Shroomites",line_count:1}}

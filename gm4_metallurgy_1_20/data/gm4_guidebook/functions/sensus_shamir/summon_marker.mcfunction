@@ -1,0 +1,1 @@
+execute if score gm4_metallurgy load.status matches 1.. run summon marker ~ 3954.220676160291 ~ {CustomName:'"gm4_sensus_shamir"',Tags:["gm4_guide","gm4_guide_sensus_shamir"],data:{type:"expansion",base:"metallurgy",id:"sensus_shamir",trigger:21,module_name:"Sensus Shamir",toc_line:"  ● Sensus Shamir",line_count:1}}

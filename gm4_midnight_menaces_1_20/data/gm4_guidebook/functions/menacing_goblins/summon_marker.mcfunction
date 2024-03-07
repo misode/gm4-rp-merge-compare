@@ -1,0 +1,1 @@
+execute if score gm4_midnight_menaces load.status matches 1.. run summon marker ~ 2718.678477504404 ~ {CustomName:'"gm4_menacing_goblins"',Tags:["gm4_guide","gm4_guide_menacing_goblins"],data:{type:"expansion",base:"mysterious_midnights",id:"menacing_goblins",trigger:99,module_name:"Menacing Goblins",toc_line:"  ● Menacing Goblins",line_count:1}}

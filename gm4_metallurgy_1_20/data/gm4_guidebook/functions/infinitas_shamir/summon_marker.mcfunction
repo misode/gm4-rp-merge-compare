@@ -1,0 +1,1 @@
+execute if score gm4_metallurgy load.status matches 1.. run summon marker ~ 1961.572837729256 ~ {CustomName:'"gm4_infinitas_shamir"',Tags:["gm4_guide","gm4_guide_infinitas_shamir"],data:{type:"expansion",base:"metallurgy",id:"infinitas_shamir",trigger:23,module_name:"Infinitas Shamir",toc_line:"  ● Infinitas Shamir",line_count:1}}

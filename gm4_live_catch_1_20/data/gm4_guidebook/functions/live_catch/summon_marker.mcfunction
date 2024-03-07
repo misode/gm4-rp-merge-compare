@@ -1,0 +1,1 @@
+execute if score gm4_live_catch load.status matches 1.. run summon marker ~ 2545.590901373343 ~ {CustomName:'"gm4_live_catch"',Tags:["gm4_guide","gm4_guide_live_catch"],data:{type:"module",id:"live_catch",trigger:11,module_name:"Live Catch",toc_line:"● Live Catch",line_count:1}}

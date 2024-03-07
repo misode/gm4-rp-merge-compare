@@ -1,0 +1,1 @@
+execute if score gm4_beehive_inspector load.status matches 1.. run summon marker ~ 451.409887427704 ~ {CustomName:'"gm4_beehive_inspector"',Tags:["gm4_guide","gm4_guide_beehive_inspector"],data:{type:"module",id:"beehive_inspector",trigger:51,module_name:"Beehive Inspector",toc_line:"● Beehive Inspector",line_count:1}}

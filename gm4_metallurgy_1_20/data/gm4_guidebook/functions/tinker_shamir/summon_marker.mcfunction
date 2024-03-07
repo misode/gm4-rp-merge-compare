@@ -1,0 +1,1 @@
+execute if score gm4_metallurgy load.status matches 1.. run summon marker ~ 4190.524302292533 ~ {CustomName:'"gm4_tinker_shamir"',Tags:["gm4_guide","gm4_guide_tinker_shamir"],data:{type:"expansion",base:"metallurgy",id:"tinker_shamir",trigger:26,module_name:"Tinker Shamir",toc_line:"  ● Tinker Shamir",line_count:1}}

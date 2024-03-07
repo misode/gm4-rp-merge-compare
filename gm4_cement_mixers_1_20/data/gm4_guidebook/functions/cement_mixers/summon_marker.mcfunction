@@ -1,0 +1,1 @@
+execute if score gm4_cement_mixers load.status matches 1.. run summon marker ~ 659.530987417665 ~ {CustomName:'"gm4_cement_mixers"',Tags:["gm4_guide","gm4_guide_cement_mixers"],data:{type:"expansion",base:"liquid_tanks",id:"cement_mixers",trigger:66,module_name:"Cement Mixers",toc_line:"  ● Cement Mixers",line_count:1}}

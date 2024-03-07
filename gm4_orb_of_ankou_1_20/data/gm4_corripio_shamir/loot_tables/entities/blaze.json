@@ -1,0 +1,117 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gm4_orb_of_ankou:items/soul_essence/blasting"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:looting",
+          "chances": [
+            2e-05,
+            8e-05,
+            0.0005,
+            0.00164,
+            0.00386,
+            0.00752,
+            0.01298,
+            0.0206,
+            0.03074,
+            0.04376,
+            0.06002
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gm4_orb_of_ankou:items/soul_essence/feathery"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:looting",
+          "chances": [
+            1.7e-05,
+            6.8e-05,
+            0.000425,
+            0.001394,
+            0.003281,
+            0.006392,
+            0.011033,
+            0.01751,
+            0.026129,
+            0.037196,
+            0.051017
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gm4_orb_of_ankou:items/soul_essence/incombustible"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:looting",
+          "chances": [
+            1.9e-05,
+            7.6e-05,
+            0.000475,
+            0.001558,
+            0.003667,
+            0.007144,
+            0.012331,
+            0.01957,
+            0.029203,
+            0.041572,
+            0.057019
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gm4_orb_of_ankou:items/soul_essence/soaring"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:looting",
+          "chances": [
+            1.3e-05,
+            5.2e-05,
+            0.000325,
+            0.001066,
+            0.002509,
+            0.004888,
+            0.008437,
+            0.01339,
+            0.019981,
+            0.028444,
+            0.039013
+          ]
+        }
+      ]
+    }
+  ]
+}

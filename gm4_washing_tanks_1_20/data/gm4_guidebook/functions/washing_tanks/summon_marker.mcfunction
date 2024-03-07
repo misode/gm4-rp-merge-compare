@@ -1,0 +1,1 @@
+execute if score gm4_washing_tanks load.status matches 1.. run summon marker ~ 4748.575171464641 ~ {CustomName:'"gm4_washing_tanks"',Tags:["gm4_guide","gm4_guide_washing_tanks"],data:{type:"expansion",base:"liquid_tanks",id:"washing_tanks",trigger:3,module_name:"Washing Tanks",toc_line:"  ● Washing Tanks",line_count:1}}

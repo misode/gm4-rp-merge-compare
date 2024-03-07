@@ -1,0 +1,1 @@
+execute if score gm4_mysterious_midnights load.status matches 1.. run summon marker ~ 2953.174852106298 ~ {CustomName:'"gm4_nightmare_nights"',Tags:["gm4_guide","gm4_guide_nightmare_nights"],data:{type:"expansion",base:"mysterious_midnights",id:"nightmare_nights",trigger:40,module_name:"Nightmare Nights",toc_line:"  ● Nightmare Nights",line_count:1}}

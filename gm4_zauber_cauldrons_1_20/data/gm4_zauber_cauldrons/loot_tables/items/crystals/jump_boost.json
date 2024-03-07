@@ -1,0 +1,61 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:3420056,HideFlags:2,gm4_zauber_cauldrons:{item:\"crystal\",type:\"jump_boost\"},SkullOwner:{Name:\"[Drop to Fix Item] gm4_zauber_cauldrons:crystal/jump_boost\",Id:[I;1384053766,-356430469,-1755842415,436879590],Properties:{textures:[{Value:\"eyd0ZXh0dXJlcyc6IHsnU0tJTic6IHsndXJsJzogJ2h0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODRlYzgzNmNjZTA2ZTFlZDgxYmQ3MDBmNzc1NDhmNWZlMDkyNDYxZmY5YTJlNjBhNzUyNjQ1YjFkMDVhMjIxOCd9fX0=\"}]}}}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.gm4.zauber_cauldrons.crystal.jump_boost",
+                "fallback": "Crystal of Leaping",
+                "color": "yellow",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:horse.jump_strength",
+                  "name": "gm4_unstackable",
+                  "amount": 1,
+                  "operation": "addition",
+                  "slot": "legs"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "translate": "potion.withAmplifier",
+                    "with": [
+                      {
+                        "translate": "effect.minecraft.jump_boost"
+                      },
+                      {
+                        "translate": "potion.potency.1"
+                      }
+                    ],
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

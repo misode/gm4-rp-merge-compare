@@ -1,0 +1,86 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.gm4.zauber_cauldrons.zauber_armor.chestplate",
+                "fallback": "Zauber Chestplate",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:3420004}"
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_zauber_cauldrons:temp/cauldron/ingredients"
+              },
+              "ops": [
+                {
+                  "source": "items[{Count:1b,tag:{gm4_zauber_cauldrons:{item:\"minecraft:golden_chestplate\"}}}].tag",
+                  "target": "{}",
+                  "op": "merge"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{gm4_zauber_cauldrons:{item:\"zauber_armor\",type:\"chestplate\"}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.armor_toughness",
+                  "name": "generic.armor_toughness",
+                  "amount": 3,
+                  "operation": "addition",
+                  "slot": "chest"
+                },
+                {
+                  "attribute": "minecraft:generic.armor",
+                  "name": "generic.armor",
+                  "amount": 7,
+                  "operation": "addition",
+                  "slot": "chest"
+                },
+                {
+                  "attribute": "minecraft:generic.movement_speed",
+                  "name": "gm4_zauber_cauldrons.armor.speed_boost",
+                  "amount": 0.12,
+                  "operation": "multiply_base",
+                  "slot": "chest"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "item.gm4.zauber_cauldrons.zauber_armor.magic",
+                  "fallback": "+%s%% Magic",
+                  "with": [
+                    "25"
+                  ],
+                  "color": "blue",
+                  "italic": false
+                }
+              ],
+              "replace": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

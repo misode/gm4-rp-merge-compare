@@ -1,0 +1,1 @@
+execute if score gm4_teleportation_anchors load.status matches 1.. run summon marker ~ 4159.398509444007 ~ {CustomName:'"gm4_teleportation_anchors"',Tags:["gm4_guide","gm4_guide_teleportation_anchors"],data:{type:"module",id:"teleportation_anchors",trigger:114,module_name:"Teleportation Anchors",toc_line:"● Teleportation Anchors",line_count:2}}

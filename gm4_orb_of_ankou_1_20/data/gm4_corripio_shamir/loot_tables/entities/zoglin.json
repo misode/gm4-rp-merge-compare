@@ -1,0 +1,145 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gm4_orb_of_ankou:items/soul_essence/aggressive"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:looting",
+          "chances": [
+            0.0005,
+            0.002,
+            0.0125,
+            0.041,
+            0.0965,
+            0.188,
+            0.3245,
+            0.515,
+            0.7685,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gm4_orb_of_ankou:items/soul_essence/anchoring"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:looting",
+          "chances": [
+            0.0003,
+            0.0012,
+            0.0075,
+            0.0246,
+            0.0579,
+            0.1128,
+            0.1947,
+            0.309,
+            0.4611,
+            0.6564,
+            0.9003
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gm4_orb_of_ankou:items/soul_essence/bashing"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:looting",
+          "chances": [
+            0.0004,
+            0.0016,
+            0.01,
+            0.0328,
+            0.0772,
+            0.1504,
+            0.2596,
+            0.412,
+            0.6148,
+            0.8752,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gm4_orb_of_ankou:items/soul_essence/incombustible"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:looting",
+          "chances": [
+            0.0004,
+            0.0016,
+            0.01,
+            0.0328,
+            0.0772,
+            0.1504,
+            0.2596,
+            0.412,
+            0.6148,
+            0.8752,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gm4_orb_of_ankou:items/soul_essence/lifeless"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:looting",
+          "chances": [
+            0.0006,
+            0.0024,
+            0.015,
+            0.0492,
+            0.1158,
+            0.2256,
+            0.3894,
+            0.618,
+            0.9222,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    }
+  ]
+}

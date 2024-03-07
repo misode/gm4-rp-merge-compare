@@ -1,0 +1,1 @@
+execute if score gm4_apple_trees load.status matches 1.. run summon marker ~ 332.547322425669 ~ {CustomName:'"gm4_apple_trees"',Tags:["gm4_guide","gm4_guide_apple_trees"],data:{type:"module",id:"apple_trees",trigger:83,module_name:"Apple Trees",toc_line:"● Apple Trees",line_count:1}}

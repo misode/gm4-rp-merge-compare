@@ -1,0 +1,1 @@
+execute if score gm4_metallurgy load.status matches 1.. run summon marker ~ 2842.183752154645 ~ {CustomName:'"gm4_musical_shamir"',Tags:["gm4_guide","gm4_guide_musical_shamir"],data:{type:"expansion",base:"metallurgy",id:"musical_shamir",trigger:29,module_name:"Musical Shamir",toc_line:"  ● Musical Shamir",line_count:1}}

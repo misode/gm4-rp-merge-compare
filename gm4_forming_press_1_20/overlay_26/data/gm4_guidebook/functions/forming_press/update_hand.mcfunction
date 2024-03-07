@@ -1,0 +1,2 @@
+execute if score @s gm4_guide matches 16 if score gm4_forming_press load.status matches 1.. run loot replace entity @s[predicate=gm4_guidebook:book_in_mainhand] weapon.mainhand loot gm4_guidebook:forming_press
+execute if score @s gm4_guide matches 16 if score gm4_forming_press load.status matches 1.. run loot replace entity @s[predicate=gm4_guidebook:book_in_offhand] weapon.offhand loot gm4_guidebook:forming_press

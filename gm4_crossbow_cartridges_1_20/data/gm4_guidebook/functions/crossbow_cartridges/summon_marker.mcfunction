@@ -1,0 +1,1 @@
+execute if score gm4_crossbow_cartridges load.status matches 1.. run summon marker ~ 759.376738885446 ~ {CustomName:'"gm4_crossbow_cartridges"',Tags:["gm4_guide","gm4_guide_crossbow_cartridges"],data:{type:"module",id:"crossbow_cartridges",trigger:65,module_name:"Crossbow Cartridges",toc_line:"● Crossbow Cartridges",line_count:2}}

@@ -1,0 +1,1 @@
+execute if score gm4_orb_of_ankou load.status matches 1.. run summon marker ~ 737.333098032259 ~ {CustomName:'"gm4_corripio_shamir"',Tags:["gm4_guide","gm4_guide_corripio_shamir"],data:{type:"expansion",base:"metallurgy",id:"corripio_shamir",trigger:86,module_name:"Corripio Shamir",toc_line:"  ● Corripio Shamir",line_count:1}}

@@ -1,0 +1,1 @@
+execute if score gm4_enderman_support_class load.status matches 1.. run summon marker ~ 1137.403206101032 ~ {CustomName:'"gm4_enderman_support_class"',Tags:["gm4_guide","gm4_guide_enderman_support_class"],data:{type:"module",id:"enderman_support_class",trigger:80,module_name:"Enderman Support Class",toc_line:"● Enderman Support Class",line_count:2}}

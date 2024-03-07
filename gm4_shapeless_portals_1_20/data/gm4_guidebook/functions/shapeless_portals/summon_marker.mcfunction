@@ -1,0 +1,1 @@
+execute if score gm4_shapeless_portals load.status matches 1.. run summon marker ~ 3973.388197200765 ~ {CustomName:'"gm4_shapeless_portals"',Tags:["gm4_guide","gm4_guide_shapeless_portals"],data:{type:"module",id:"shapeless_portals",trigger:113,module_name:"Shapeless Portals",toc_line:"● Shapeless Portals",line_count:1}}

@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:enter_block",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "gm4_pig_tractors:player/vehicle/pig/in_farmland"
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_pig_tractors"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ],
+        "block": "minecraft:carrots",
+        "state": {
+          "age": "7"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "gm4_pig_tractors:harvest/carrots"
+  }
+}

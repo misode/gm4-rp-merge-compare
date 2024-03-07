@@ -1,0 +1,106 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:3420012,HideFlags:2,gm4_zauber_cauldrons:{item:\"crystal\",type:\"speed\"},SkullOwner:{Name:\"[Drop to Fix Item] gm4_zauber_cauldrons:crystal/speed\",Id:[I;-565293039,1449936483,-1314907026,-480547454],Properties:{textures:[{Value:\"eyd0ZXh0dXJlcyc6IHsnU0tJTic6IHsndXJsJzogJ2h0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjBiNmViMTAyZDRmYjM2YTJiMDMwNTVmOGIwYWZkMTg4MWMxZjBiOGNiYzRiODk3YmYxMTA1ZTdhNzFiNDc1Zid9fX0=\"}]}}}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.gm4.zauber_cauldrons.crystal.speed",
+                "fallback": "Crystal of Swiftness",
+                "color": "yellow",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:horse.jump_strength",
+                  "name": "gm4_unstackable",
+                  "amount": 1,
+                  "operation": "addition",
+                  "slot": "legs"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "translate": "potion.withAmplifier",
+                    "with": [
+                      {
+                        "translate": "effect.minecraft.speed"
+                      },
+                      {
+                        "translate": "potion.potency.1"
+                      }
+                    ],
+                    "color": "blue",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "translate": "potion.withAmplifier",
+                    "with": [
+                      {
+                        "translate": "effect.minecraft.weakness"
+                      },
+                      {
+                        "translate": "potion.potency.0"
+                      }
+                    ],
+                    "color": "red",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": ""
+                },
+                {
+                  "translate": "potion.whenDrank",
+                  "color": "dark_purple",
+                  "italic": false
+                },
+                {
+                  "translate": "attribute.modifier.plus.1",
+                  "with": [
+                    "40",
+                    {
+                      "translate": "attribute.name.generic.movement_speed"
+                    }
+                  ],
+                  "color": "blue",
+                  "italic": false
+                },
+                {
+                  "translate": "attribute.modifier.take.0",
+                  "with": [
+                    "4",
+                    {
+                      "translate": "attribute.name.generic.attack_damage"
+                    }
+                  ],
+                  "color": "red",
+                  "italic": false
+                }
+              ],
+              "replace": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

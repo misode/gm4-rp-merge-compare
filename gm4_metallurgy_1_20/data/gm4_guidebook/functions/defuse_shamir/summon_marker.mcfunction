@@ -1,0 +1,1 @@
+execute if score gm4_metallurgy load.status matches 1.. run summon marker ~ 863.614203429438 ~ {CustomName:'"gm4_defuse_shamir"',Tags:["gm4_guide","gm4_guide_defuse_shamir"],data:{type:"expansion",base:"metallurgy",id:"defuse_shamir",trigger:25,module_name:"Defuse Shamir",toc_line:"  ● Defuse Shamir",line_count:1}}

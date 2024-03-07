@@ -1,0 +1,11 @@
+{
+  "values": [
+    "gm4_guidebook:falling_stars/add_toc_line",
+    "gm4_guidebook:harvest_moons/add_toc_line",
+    "gm4_guidebook:mysterious_midnights/add_toc_line",
+    "gm4_guidebook:nightmare_nights/add_toc_line",
+    "gm4_guidebook:resurrecting_skeletons/add_toc_line",
+    "gm4_guidebook:resurrecting_zombies/add_toc_line",
+    "gm4_guidebook:tipped_skeletons/add_toc_line"
+  ]
+}

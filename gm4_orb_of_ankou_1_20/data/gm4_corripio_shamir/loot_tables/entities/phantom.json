@@ -1,0 +1,89 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gm4_orb_of_ankou:items/soul_essence/feathery"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:looting",
+          "chances": [
+            0.0002,
+            0.0008,
+            0.005,
+            0.0164,
+            0.0386,
+            0.0752,
+            0.1298,
+            0.206,
+            0.3074,
+            0.4376,
+            0.6002
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gm4_orb_of_ankou:items/soul_essence/lifeless"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:looting",
+          "chances": [
+            0.0002,
+            0.0008,
+            0.005,
+            0.0164,
+            0.0386,
+            0.0752,
+            0.1298,
+            0.206,
+            0.3074,
+            0.4376,
+            0.6002
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gm4_orb_of_ankou:items/soul_essence/soaring"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:looting",
+          "chances": [
+            5e-05,
+            0.0002,
+            0.00125,
+            0.0041,
+            0.00965,
+            0.0188,
+            0.03245,
+            0.0515,
+            0.07685,
+            0.1094,
+            0.15005
+          ]
+        }
+      ]
+    }
+  ]
+}

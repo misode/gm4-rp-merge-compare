@@ -1,0 +1,2 @@
+execute if score @s gm4_guide matches 52 if score gm4_tinkering_compressors load.status matches 1.. run loot replace entity @s[predicate=gm4_guidebook:book_in_mainhand] weapon.mainhand loot gm4_guidebook:tinkering_compressors
+execute if score @s gm4_guide matches 52 if score gm4_tinkering_compressors load.status matches 1.. run loot replace entity @s[predicate=gm4_guidebook:book_in_offhand] weapon.offhand loot gm4_guidebook:tinkering_compressors

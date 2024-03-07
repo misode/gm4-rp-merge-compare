@@ -1,0 +1,1 @@
+execute if score gm4_ink_spitting_squid load.status matches 1.. run summon marker ~ 1963.09036415122 ~ {CustomName:'"gm4_ink_spitting_squid"',Tags:["gm4_guide","gm4_guide_ink_spitting_squid"],data:{type:"module",id:"ink_spitting_squid",trigger:78,module_name:"Ink Spitting Squid",toc_line:"● Ink Spitting Squid",line_count:1}}

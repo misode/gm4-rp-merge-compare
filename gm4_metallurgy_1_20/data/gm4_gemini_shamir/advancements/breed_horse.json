@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "breed_horses": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child": {
+          "type": "horse"
+        },
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_metallurgy"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "gm4_gemini_shamir:breed/check_horse"
+  }
+}

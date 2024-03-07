@@ -1,0 +1,1 @@
+execute if score gm4_metallurgy load.status matches 1.. run summon marker ~ 343.880704028915 ~ {CustomName:'"gm4_arborenda_shamir"',Tags:["gm4_guide","gm4_guide_arborenda_shamir"],data:{type:"expansion",base:"metallurgy",id:"arborenda_shamir",trigger:20,module_name:"Arborenda Shamir",toc_line:"  ● Arborenda Shamir",line_count:1}}

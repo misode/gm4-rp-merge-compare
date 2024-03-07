@@ -1,0 +1,47 @@
+{
+  "criteria": {
+    "place_furnace": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "gamemode": "spectator"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_soul_glass"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ],
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "minecraft:blast_furnace"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "gm4_soul_glass:furnace/place_blast_furnace"
+  }
+}

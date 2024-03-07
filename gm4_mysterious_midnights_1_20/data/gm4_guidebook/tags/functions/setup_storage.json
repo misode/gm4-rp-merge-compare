@@ -1,0 +1,11 @@
+{
+  "values": [
+    "gm4_guidebook:falling_stars/setup_storage",
+    "gm4_guidebook:harvest_moons/setup_storage",
+    "gm4_guidebook:mysterious_midnights/setup_storage",
+    "gm4_guidebook:nightmare_nights/setup_storage",
+    "gm4_guidebook:resurrecting_skeletons/setup_storage",
+    "gm4_guidebook:resurrecting_zombies/setup_storage",
+    "gm4_guidebook:tipped_skeletons/setup_storage"
+  ]
+}

@@ -1,0 +1,1 @@
+execute if score gm4_holographic_tags load.status matches 1.. run summon marker ~ 1765.06204984401 ~ {CustomName:'"gm4_holographic_tags"',Tags:["gm4_guide","gm4_guide_holographic_tags"],data:{type:"module",id:"holographic_tags",trigger:94,module_name:"Holographic Tags",toc_line:"● Holographic Tags",line_count:1}}

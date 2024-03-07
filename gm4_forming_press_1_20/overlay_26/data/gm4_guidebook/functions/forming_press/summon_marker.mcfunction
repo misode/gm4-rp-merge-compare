@@ -1,0 +1,1 @@
+execute if score gm4_forming_press load.status matches 1.. run summon marker ~ 1354.954162808386 ~ {CustomName:'"gm4_forming_press"',Tags:["gm4_guide","gm4_guide_forming_press"],data:{type:"module",id:"forming_press",trigger:16,module_name:"Forming Press",toc_line:"● Forming Press",line_count:1}}

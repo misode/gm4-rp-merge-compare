@@ -1,0 +1,1 @@
+execute if score gm4_midnight_menaces load.status matches 1.. run summon marker ~ 3923.562774053115 ~ {CustomName:'"gm4_sandy_husks"',Tags:["gm4_guide","gm4_guide_sandy_husks"],data:{type:"expansion",base:"mysterious_midnights",id:"sandy_husks",trigger:98,module_name:"Sandy Husks",toc_line:"  ● Sandy Husks",line_count:1}}

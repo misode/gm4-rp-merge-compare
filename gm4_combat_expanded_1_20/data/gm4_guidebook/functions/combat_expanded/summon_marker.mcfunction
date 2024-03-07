@@ -1,0 +1,1 @@
+execute if score gm4_combat_expanded load.status matches 1.. run summon marker ~ 735.750540779342 ~ {CustomName:'"gm4_combat_expanded"',Tags:["gm4_guide","gm4_guide_combat_expanded"],data:{type:"module",id:"combat_expanded",trigger:115,module_name:"Combat Expanded",toc_line:"● Combat Expanded",line_count:1}}

@@ -1,0 +1,1 @@
+execute if score gm4_enchantment_extractors load.status matches 1.. run summon marker ~ 1137.145595892059 ~ {CustomName:'"gm4_enchantment_extractors"',Tags:["gm4_guide","gm4_guide_enchantment_extractors"],data:{type:"module",id:"enchantment_extractors",trigger:49,module_name:"Enchantment Extractors",toc_line:"● Enchantment Extractors",line_count:2}}

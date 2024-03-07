@@ -1,0 +1,1 @@
+execute if score gm4_pig_tractors load.status matches 1.. run summon marker ~ 3365.081694615826 ~ {CustomName:'"gm4_pig_tractors"',Tags:["gm4_guide","gm4_guide_pig_tractors"],data:{type:"module",id:"pig_tractors",trigger:56,module_name:"Pig Tractors",toc_line:"● Pig Tractors",line_count:1}}

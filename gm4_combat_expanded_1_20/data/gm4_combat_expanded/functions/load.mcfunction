@@ -1,0 +1,18 @@
+execute if score gm4 load.status matches 1 if score gm4_minor load.status matches 4.. if score gm4_forceload load.status matches 1 if score gm4_forceload_minor load.status matches 1.. if score gm4_lore load.status matches 1 if score gm4_lore_minor load.status matches 0.. run scoreboard players set gm4_combat_expanded load.status 1
+execute if score gm4 load.status matches 1 if score gm4_minor load.status matches 4.. if score gm4_forceload load.status matches 1 if score gm4_forceload_minor load.status matches 1.. if score gm4_lore load.status matches 1 if score gm4_lore_minor load.status matches 0.. run scoreboard players set gm4_combat_expanded_minor load.status 4
+execute unless score gm4 load.status matches 1.. run data modify storage gm4:log queue append value {type:"missing",module:"Combat Expanded",id:"gm4_combat_expanded",require:"Gamemode 4 Base",require_id:"gm4"}
+execute if score gm4 load.status matches 1.. unless score gm4 load.status matches 1 run data modify storage gm4:log queue append value {type:"version_conflict",module:"Combat Expanded",id:"gm4_combat_expanded",require:"Gamemode 4 Base",require_id:"gm4",require_ver:"1.4.0"}
+execute if score gm4 load.status matches 1 unless score gm4_minor load.status matches 4.. run data modify storage gm4:log queue append value {type:"version_conflict",module:"Combat Expanded",id:"gm4_combat_expanded",require:"Gamemode 4 Base",require_id:"gm4",require_ver:"1.4.0"}
+execute unless score gm4_forceload load.status matches 1.. run data modify storage gm4:log queue append value {type:"missing",module:"Combat Expanded",id:"gm4_combat_expanded",require:"lib_forceload",require_id:"gm4_forceload"}
+execute if score gm4_forceload load.status matches 1.. unless score gm4_forceload load.status matches 1 run data modify storage gm4:log queue append value {type:"version_conflict",module:"Combat Expanded",id:"gm4_combat_expanded",require:"lib_forceload",require_id:"gm4_forceload",require_ver:"1.1.0"}
+execute if score gm4_forceload load.status matches 1 unless score gm4_forceload_minor load.status matches 1.. run data modify storage gm4:log queue append value {type:"version_conflict",module:"Combat Expanded",id:"gm4_combat_expanded",require:"lib_forceload",require_id:"gm4_forceload",require_ver:"1.1.0"}
+execute unless score gm4_lore load.status matches 1.. run data modify storage gm4:log queue append value {type:"missing",module:"Combat Expanded",id:"gm4_combat_expanded",require:"lib_lore",require_id:"gm4_lore"}
+execute if score gm4_lore load.status matches 1.. unless score gm4_lore load.status matches 1 run data modify storage gm4:log queue append value {type:"version_conflict",module:"Combat Expanded",id:"gm4_combat_expanded",require:"lib_lore",require_id:"gm4_lore",require_ver:"1.0.0"}
+execute if score gm4_lore load.status matches 1 unless score gm4_lore_minor load.status matches 0.. run data modify storage gm4:log queue append value {type:"version_conflict",module:"Combat Expanded",id:"gm4_combat_expanded",require:"lib_lore",require_id:"gm4_lore",require_ver:"1.0.0"}
+execute unless score gm4_combat_expanded load.status matches 1.. run scoreboard players set gm4_combat_expanded load.status -1
+
+execute if score gm4_combat_expanded load.status matches 1 run function gm4_combat_expanded:init
+execute unless score gm4_combat_expanded load.status matches 1 run schedule clear gm4_combat_expanded:tick
+execute unless score gm4_combat_expanded load.status matches 1 run schedule clear gm4_combat_expanded:main
+execute unless score gm4_combat_expanded load.status matches 1 run schedule clear gm4_combat_expanded:slow_clock
+execute unless score gm4_combat_expanded load.status matches 1 run schedule clear gm4_combat_expanded:player/submain

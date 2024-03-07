@@ -1,0 +1,1 @@
+execute if score gm4_lightning_in_a_bottle load.status matches 1.. run summon marker ~ 2541.392606440031 ~ {CustomName:'"gm4_lightning_in_a_bottle"',Tags:["gm4_guide","gm4_guide_lightning_in_a_bottle"],data:{type:"module",id:"lightning_in_a_bottle",trigger:109,module_name:"Lightning in a Bottle",toc_line:"● Lightning in a Bottle",line_count:1}}

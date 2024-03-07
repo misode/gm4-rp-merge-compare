@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "entered_end_gateway": {
+      "trigger": "minecraft:enter_block",
+      "conditions": {
+        "block": "minecraft:end_gateway",
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_teleportation_anchors"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "gm4_teleportation_anchors:player/enter_end_gateway"
+  }
+}

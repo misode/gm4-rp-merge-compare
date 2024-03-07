@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:player_head",
+      "nbt": "{CustomModelData:3420049,SkullOwner:{Id:[I;140191582,-1151712444,-1271445916,307298631],Properties:{textures:[{Value:\"ewogICJ0aW1lc3RhbXAiIDogMTYyOTY4NDMzNDA1MiwKICAicHJvZmlsZUlkIiA6ICI3ZmIyOGQ1N2FhZmQ0MmQ1YTcwNWNlZjE4YWI1MzEzZiIsCiAgInByb2ZpbGVOYW1lIiA6ICJjaXJjdWl0MTAiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjU1MTdhNjYyYTgzY2FhYWFjMWE3MTMzMmUzODFiYmZmYzkxYjJhNjBhODc1Y2NhZDhmZTM4ZGM3NWRlZDU0OSIKICAgIH0KICB9Cn0=\"}]}}}"
+    },
+    "title": {
+      "translate": "advancement.gm4.metallurgy.blast_ore.title",
+      "fallback": "How Ad-ore-able"
+    },
+    "description": {
+      "translate": "advancement.gm4.metallurgy.blast_ore.description",
+      "fallback": "Blast open some rock and find the metal within.",
+      "color": "gray"
+    }
+  },
+  "parent": "gm4:root",
+  "criteria": {
+    "pickup_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "nbt": "{gm4_metallurgy:{item:\"ore\"}}"
+          }
+        ],
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_metallurgy"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  }
+}

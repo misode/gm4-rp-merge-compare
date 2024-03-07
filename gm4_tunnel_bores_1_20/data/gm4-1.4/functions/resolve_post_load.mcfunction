@@ -1,0 +1,1 @@
+execute if score gm4 load.status matches 1 if score gm4_minor load.status matches 4 run function gm4-1.4:post_load

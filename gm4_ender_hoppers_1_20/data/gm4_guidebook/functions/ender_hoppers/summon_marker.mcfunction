@@ -1,0 +1,1 @@
+execute if score gm4_ender_hoppers load.status matches 1.. run summon marker ~ 1137.40314183342 ~ {CustomName:'"gm4_ender_hoppers"',Tags:["gm4_guide","gm4_guide_ender_hoppers"],data:{type:"module",id:"ender_hoppers",trigger:35,module_name:"Ender Hoppers",toc_line:"● Ender Hoppers",line_count:1}}

@@ -1,0 +1,1 @@
+execute if score gm4_weighted_armour load.status matches 1.. run summon marker ~ 1688.746464910336 ~ {CustomName:'"gm4_helious_shamir"',Tags:["gm4_guide","gm4_guide_helious_shamir"],data:{type:"expansion",base:"metallurgy",id:"helious_shamir",trigger:69,module_name:"Helious Shamir",toc_line:"  ● Helious Shamir",line_count:1}}

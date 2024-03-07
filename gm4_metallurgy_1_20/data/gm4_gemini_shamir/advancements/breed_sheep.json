@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "breed_sheep": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child": {
+          "type": "sheep"
+        },
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_metallurgy"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "gm4_gemini_shamir:breed/check_sheep"
+  }
+}

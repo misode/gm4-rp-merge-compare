@@ -1,0 +1,89 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gm4_orb_of_ankou:items/soul_essence/aggressive"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:looting",
+          "chances": [
+            6e-05,
+            0.00024,
+            0.0015,
+            0.00492,
+            0.01158,
+            0.02256,
+            0.03894,
+            0.0618,
+            0.09222,
+            0.13128,
+            0.18006
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gm4_orb_of_ankou:items/soul_essence/expeditious"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:looting",
+          "chances": [
+            2.5e-05,
+            0.0001,
+            0.000625,
+            0.00205,
+            0.004825,
+            0.0094,
+            0.016225,
+            0.02575,
+            0.038425,
+            0.0547,
+            0.075025
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gm4_orb_of_ankou:items/soul_essence/gazing"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:looting",
+          "chances": [
+            5e-05,
+            0.0002,
+            0.00125,
+            0.0041,
+            0.00965,
+            0.0188,
+            0.03245,
+            0.0515,
+            0.07685,
+            0.1094,
+            0.15005
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+tellraw @s ["", {"translate": "text.gm4.guidebook.discovered", "fallback": "%1$s has discovered a guidebook page from %2$s", "with": [{"selector": "@s"}, {"text": "[Orb of Ankou]", "color": "#4AA0C7", "hoverEvent": {"action": "show_text", "contents": [{"text": "Orb of Ankou", "color": "#4AA0C7"}, {"text": "\n"}, {"translate": "text.gm4.guidebook.module_desc.Orb of Ankou", "fallback": "Harvest mob souls and condense them using forbidden nether magic to obtain mob abilities! Learn how to fly, or simply become turtule-man.", "italic": true, "color": "gray"}]}}]}]
+advancement grant @s only gm4_guidebook:orb_of_ankou/display/orb_fusing
+advancement grant @s only gm4_guidebook:orb_of_ankou/unlock/orb_crafting

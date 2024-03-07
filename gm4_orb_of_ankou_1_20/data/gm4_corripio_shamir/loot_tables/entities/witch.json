@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gm4_orb_of_ankou:items/soul_essence/neutralizing"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:looting",
+          "chances": [
+            0.00015,
+            0.0006,
+            0.00375,
+            0.0123,
+            0.02895,
+            0.0564,
+            0.09735,
+            0.1545,
+            0.23055,
+            0.3282,
+            0.45015
+          ]
+        }
+      ]
+    }
+  ]
+}

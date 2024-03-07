@@ -1,0 +1,1 @@
+execute if score gm4_poses_pack load.status matches 1.. run summon marker ~ 3414.068129918655 ~ {CustomName:'"gm4_poses_pack"',Tags:["gm4_guide","gm4_guide_poses_pack"],data:{type:"expansion",base:"better_armour_stands",id:"poses_pack",trigger:92,module_name:"Poses Pack",toc_line:"  ● Poses Pack",line_count:1}}

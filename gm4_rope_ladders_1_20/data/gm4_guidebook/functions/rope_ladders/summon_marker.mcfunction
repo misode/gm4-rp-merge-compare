@@ -1,0 +1,1 @@
+execute if score gm4_rope_ladders load.status matches 1.. run summon marker ~ 3825.000179931619 ~ {CustomName:'"gm4_rope_ladders"',Tags:["gm4_guide","gm4_guide_rope_ladders"],data:{type:"module",id:"rope_ladders",trigger:112,module_name:"Rope Ladders",toc_line:"● Rope Ladders",line_count:1}}

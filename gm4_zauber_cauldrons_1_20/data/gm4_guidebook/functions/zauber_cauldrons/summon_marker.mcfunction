@@ -1,0 +1,1 @@
+execute if score gm4_zauber_cauldrons load.status matches 1.. run summon marker ~ 5366.749169930782 ~ {CustomName:'"gm4_zauber_cauldrons"',Tags:["gm4_guide","gm4_guide_zauber_cauldrons"],data:{type:"module",id:"zauber_cauldrons",trigger:53,module_name:"Zauber Cauldrons",toc_line:"● Zauber Cauldrons",line_count:1}}

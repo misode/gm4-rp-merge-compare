@@ -1,0 +1,1 @@
+execute if score gm4_standard_crafting load.status matches 1.. run summon marker ~ 4064.873907657601 ~ {CustomName:'"gm4_standard_crafting"',Tags:["gm4_guide","gm4_guide_standard_crafting"],data:{type:"expansion",base:"custom_crafters",id:"standard_crafting",trigger:93,module_name:"Standard Crafting",toc_line:"  ● Standard Crafting",line_count:1}}

@@ -1,0 +1,1 @@
+execute if score gm4_vigere_shamir load.status matches 1.. run summon marker ~ 4600.271647537812 ~ {CustomName:'"gm4_vigere_shamir"',Tags:["gm4_guide","gm4_guide_vigere_shamir"],data:{type:"expansion",base:"metallurgy",id:"vigere_shamir",trigger:14,module_name:"Vigere Shamir",toc_line:"  ● Vigere Shamir",line_count:1}}

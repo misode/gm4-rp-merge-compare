@@ -1,0 +1,1 @@
+execute if score gm4_end_fishing load.status matches 1.. run summon marker ~ 1137.410269380909 ~ {CustomName:'"gm4_end_fishing"',Tags:["gm4_guide","gm4_guide_end_fishing"],data:{type:"module",id:"end_fishing",trigger:7,module_name:"End Fishing",toc_line:"● End Fishing",line_count:1}}

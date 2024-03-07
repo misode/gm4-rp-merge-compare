@@ -1,0 +1,1 @@
+execute if score gm4_dangerous_dungeons load.status matches 1.. run summon marker ~ 835.219565628447 ~ {CustomName:'"gm4_dangerous_dungeons"',Tags:["gm4_guide","gm4_guide_dangerous_dungeons"],data:{type:"module",id:"dangerous_dungeons",trigger:60,module_name:"Dangerous Dungeons",toc_line:"● Dangerous Dungeons",line_count:2}}

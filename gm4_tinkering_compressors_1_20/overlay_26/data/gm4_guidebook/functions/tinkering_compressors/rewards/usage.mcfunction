@@ -1,0 +1,3 @@
+tellraw @s ["", {"translate": "text.gm4.guidebook.discovered", "fallback": "%1$s has discovered a guidebook page from %2$s", "with": [{"selector": "@s"}, {"text": "[Tinkering Compressors]", "color": "#4AA0C7", "hoverEvent": {"action": "show_text", "contents": [{"text": "Tinkering Compressors", "color": "#4AA0C7"}, {"text": "\n"}, {"translate": "text.gm4.guidebook.module_desc.Tinkering Compressors", "fallback": "Automatically compress stacks of items into their block form with a tinker shamir as a machine block, and back.", "italic": true, "color": "gray"}]}}]}]
+advancement grant @s only gm4_guidebook:tinkering_compressors/display/usage
+advancement grant @s only gm4_guidebook:tinkering_compressors/unlock/creation

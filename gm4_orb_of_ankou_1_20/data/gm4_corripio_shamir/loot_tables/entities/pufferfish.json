@@ -1,0 +1,117 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gm4_orb_of_ankou:items/soul_essence/bubbly"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:looting",
+          "chances": [
+            0.00065,
+            0.0026,
+            0.01625,
+            0.0533,
+            0.12545,
+            0.2444,
+            0.42185,
+            0.6695,
+            0.99905,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gm4_orb_of_ankou:items/soul_essence/gliding"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:looting",
+          "chances": [
+            0.0006,
+            0.0024,
+            0.015,
+            0.0492,
+            0.1158,
+            0.2256,
+            0.3894,
+            0.618,
+            0.9222,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gm4_orb_of_ankou:items/soul_essence/pricking"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:looting",
+          "chances": [
+            0.0003,
+            0.0012,
+            0.0075,
+            0.0246,
+            0.0579,
+            0.1128,
+            0.1947,
+            0.309,
+            0.4611,
+            0.6564,
+            0.9003
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gm4_orb_of_ankou:items/soul_essence/venomous"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:looting",
+          "chances": [
+            0.00025,
+            0.001,
+            0.00625,
+            0.0205,
+            0.04825,
+            0.094,
+            0.16225,
+            0.2575,
+            0.38425,
+            0.547,
+            0.75025
+          ]
+        }
+      ]
+    }
+  ]
+}

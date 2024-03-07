@@ -1,0 +1,1 @@
+execute if score gm4_metallurgy load.status matches 1.. run summon marker ~ 1842.349698923932 ~ {CustomName:'"gm4_hypexperia_shamir"',Tags:["gm4_guide","gm4_guide_hypexperia_shamir"],data:{type:"expansion",base:"metallurgy",id:"hypexperia_shamir",trigger:17,module_name:"Hypexperia Shamir",toc_line:"  ● Hypexperia Shamir",line_count:1}}

@@ -1,0 +1,1 @@
+execute if score gm4_note_block_interface load.status matches 1.. run summon marker ~ 3002.561659162328 ~ {CustomName:'"gm4_note_block_interface"',Tags:["gm4_guide","gm4_guide_note_block_interface"],data:{type:"module",id:"note_block_interface",trigger:10,module_name:"Note Block Interface",toc_line:"● Note Block Interface",line_count:1}}

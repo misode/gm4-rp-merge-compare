@@ -1,0 +1,41 @@
+{
+  "display": {
+    "icon": {
+      "item": "ladder",
+      "nbt": "{CustomModelData:3420001}"
+    },
+    "title": {
+      "translate": "advancement.gm4.vertical_rails.title",
+      "fallback": "Up, Up and Away!"
+    },
+    "description": {
+      "translate": "advancement.gm4.vertical_rails.description",
+      "fallback": "Ride a minecart going up a vertical rail",
+      "color": "gray"
+    }
+  },
+  "parent": "gm4:root",
+  "criteria": {
+    "ride_vertical_rail": {
+      "trigger": "minecraft:impossible",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_vertical_rails"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  }
+}

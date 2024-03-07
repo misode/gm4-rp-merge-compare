@@ -1,0 +1,1 @@
+execute if score gm4_relocators load.status matches 1.. run summon marker ~ 3747.715612412508 ~ {CustomName:'"gm4_relocators"',Tags:["gm4_guide","gm4_guide_relocators"],data:{type:"module",id:"relocators",trigger:70,module_name:"Relocators",toc_line:"● Relocators",line_count:1}}

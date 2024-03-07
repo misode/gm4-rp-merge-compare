@@ -1,0 +1,1 @@
+execute if score gm4_zauber_liquids load.status matches 1.. run summon marker ~ 5366.749174868547 ~ {CustomName:'"gm4_zauber_liquids"',Tags:["gm4_guide","gm4_guide_zauber_liquids"],data:{type:"expansion",base:"liquid_tanks",id:"zauber_liquids",trigger:31,module_name:"Zauber Liquids",toc_line:"  ● Zauber Liquids",line_count:1}}

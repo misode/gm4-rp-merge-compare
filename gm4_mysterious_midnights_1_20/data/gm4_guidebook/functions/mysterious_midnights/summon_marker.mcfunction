@@ -1,0 +1,1 @@
+execute if score gm4_mysterious_midnights load.status matches 1.. run summon marker ~ 2872.802223089131 ~ {CustomName:'"gm4_mysterious_midnights"',Tags:["gm4_guide","gm4_guide_mysterious_midnights"],data:{type:"base",id:"mysterious_midnights",trigger:42,module_name:"Mysterious Midnights",toc_line:"● Mysterious Midnights",line_count:1}}

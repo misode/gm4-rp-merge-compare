@@ -1,0 +1,1 @@
+execute if score gm4_midnight_menaces load.status matches 1.. run summon marker ~ 1948.143678907496 ~ {CustomName:'"gm4_illusioner_nights"',Tags:["gm4_guide","gm4_guide_illusioner_nights"],data:{type:"expansion",base:"mysterious_midnights",id:"illusioner_nights",trigger:103,module_name:"Illusioner Nights",toc_line:"  ● Illusioner Nights",line_count:1}}

@@ -1,0 +1,46 @@
+{
+  "criteria": {
+    "breed_turtles": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "parent": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:turtle"
+            }
+          }
+        ],
+        "partner": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:turtle"
+            }
+          }
+        ],
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_metallurgy"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "gm4_gemini_shamir:breed/check_turtle"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "rewards": {
+    "function": "gm4_percurro_shamir:search_destination"
+  },
+  "criteria": {
+    "hit_entity": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "nbt": "{SelectedItem:{tag:{gm4_metallurgy:{active_shamir:\"percurro\"}}}}"
+          }
+        },
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_percurro_shamir"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  }
+}

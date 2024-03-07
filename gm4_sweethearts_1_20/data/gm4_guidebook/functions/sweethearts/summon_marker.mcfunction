@@ -1,0 +1,1 @@
+execute if score gm4_sweethearts load.status matches 1.. run summon marker ~ 4088.792567293057 ~ {CustomName:'"gm4_sweethearts"',Tags:["gm4_guide","gm4_guide_sweethearts"],data:{type:"module",id:"sweethearts",trigger:33,module_name:"Sweethearts",toc_line:"● Sweethearts",line_count:1}}

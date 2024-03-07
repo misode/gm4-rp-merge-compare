@@ -1,0 +1,1 @@
+execute if score gm4_better_armour_stands load.status matches 1.. run summon marker ~ 455.770245686322 ~ {CustomName:'"gm4_better_armour_stands"',Tags:["gm4_guide","gm4_guide_better_armour_stands"],data:{type:"base",id:"better_armour_stands",trigger:74,module_name:"Better Armour Stands",toc_line:"● Better Armour Stands",line_count:2}}

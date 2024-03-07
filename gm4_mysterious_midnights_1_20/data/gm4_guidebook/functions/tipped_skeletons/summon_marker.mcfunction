@@ -1,0 +1,1 @@
+execute if score gm4_mysterious_midnights load.status matches 1.. run summon marker ~ 4191.141262308746 ~ {CustomName:'"gm4_tipped_skeletons"',Tags:["gm4_guide","gm4_guide_tipped_skeletons"],data:{type:"expansion",base:"mysterious_midnights",id:"tipped_skeletons",trigger:44,module_name:"Tipped Skeletons",toc_line:"  ● Tipped Skeletons",line_count:1}}

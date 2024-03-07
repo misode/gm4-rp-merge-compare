@@ -1,0 +1,349 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:3420001,gm4_guidebook:{lectern:1b, trigger:114},title:\"Gamemode 4 Guidebook\",author:Unknown,generation:3,pages:[]}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "text.gm4.guidebook.title",
+                "fallback": "Gamemode 4 Guidebook",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "source": "lectern_front_matter[]",
+                  "target": "pages",
+                  "op": "append"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "teleportation_anchors.lectern[0]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:teleportation_anchors/unlock/description": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "teleportation_anchors.locked[3]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:teleportation_anchors/unlock/description": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "teleportation_anchors.lectern[1]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:teleportation_anchors/unlock/crafting_jammer": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "teleportation_anchors.locked[1]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:teleportation_anchors/unlock/crafting_jammer": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "teleportation_anchors.lectern[2]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "teleportation_anchors.lectern[3]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "teleportation_anchors.lectern[4]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "teleportation_anchors.lectern[5]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "teleportation_anchors.lectern[6]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:teleportation_anchors/unlock/usage_jammer": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "teleportation_anchors.locked[1]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "teleportation_anchors.locked[1]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "teleportation_anchors.locked[1]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "teleportation_anchors.locked[1]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "teleportation_anchors.locked[1]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:teleportation_anchors/unlock/usage_jammer": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "teleportation_anchors.lectern[7]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "teleportation_anchors.lectern[8]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "teleportation_anchors.lectern[9]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "teleportation_anchors.lectern[10]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:teleportation_anchors/unlock/usage_anchor": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "op": "append",
+                  "source": "teleportation_anchors.locked[1]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "teleportation_anchors.locked[1]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "teleportation_anchors.locked[1]",
+                  "target": "pages"
+                },
+                {
+                  "op": "append",
+                  "source": "teleportation_anchors.locked[1]",
+                  "target": "pages"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "gm4_guidebook:teleportation_anchors/unlock/usage_anchor": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "gm4_guidebook:pages"
+              },
+              "ops": [
+                {
+                  "source": "blank",
+                  "target": "pages",
+                  "op": "append"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+tellraw @s ["", {"translate": "text.gm4.guidebook.discovered", "fallback": "%1$s has discovered a guidebook page from %2$s", "with": [{"selector": "@s"}, {"text": "[Custom Crafters]", "color": "#4AA0C7", "hoverEvent": {"action": "show_text", "contents": [{"text": "Custom Crafters", "color": "#4AA0C7"}, {"text": "\n"}, {"translate": "text.gm4.guidebook.module_desc.Custom Crafters", "fallback": "Craft new items with a custom crafter!", "italic": true, "color": "gray"}]}}]}]
+advancement grant @s only gm4_guidebook:custom_crafters/display/crafting
+advancement grant @s only gm4_guidebook:custom_crafters/unlock/creation

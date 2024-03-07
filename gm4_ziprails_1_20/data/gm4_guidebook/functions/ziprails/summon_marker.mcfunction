@@ -1,0 +1,1 @@
+execute if score gm4_ziprails load.status matches 1.. run summon marker ~ 5426.507494079028 ~ {CustomName:'"gm4_ziprails"',Tags:["gm4_guide","gm4_guide_ziprails"],data:{type:"module",id:"ziprails",trigger:50,module_name:"Ziprails",toc_line:"● Ziprails",line_count:1}}

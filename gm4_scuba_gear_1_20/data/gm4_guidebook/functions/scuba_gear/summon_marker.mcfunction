@@ -1,0 +1,1 @@
+execute if score gm4_scuba_gear load.status matches 1.. run summon marker ~ 3940.760733778647 ~ {CustomName:'"gm4_scuba_gear"',Tags:["gm4_guide","gm4_guide_scuba_gear"],data:{type:"module",id:"scuba_gear",trigger:96,module_name:"SCUBA Gear",toc_line:"● SCUBA Gear",line_count:1}}

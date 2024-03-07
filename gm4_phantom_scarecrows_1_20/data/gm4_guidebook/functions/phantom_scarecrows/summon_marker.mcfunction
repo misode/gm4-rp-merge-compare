@@ -1,0 +1,1 @@
+execute if score gm4_phantom_scarecrows load.status matches 1.. run summon marker ~ 3355.69973880393 ~ {CustomName:'"gm4_phantom_scarecrows"',Tags:["gm4_guide","gm4_guide_phantom_scarecrows"],data:{type:"module",id:"phantom_scarecrows",trigger:55,module_name:"Phantom Scarecrows",toc_line:"● Phantom Scarecrows",line_count:1}}

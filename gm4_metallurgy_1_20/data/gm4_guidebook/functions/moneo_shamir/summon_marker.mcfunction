@@ -1,0 +1,1 @@
+execute if score gm4_metallurgy load.status matches 1.. run summon marker ~ 2794.981082999508 ~ {CustomName:'"gm4_moneo_shamir"',Tags:["gm4_guide","gm4_guide_moneo_shamir"],data:{type:"expansion",base:"metallurgy",id:"moneo_shamir",trigger:18,module_name:"Moneo Shamir",toc_line:"  ● Moneo Shamir",line_count:1}}
