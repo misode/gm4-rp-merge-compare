@@ -2,7 +2,7 @@
   "display": {
     "icon": {
       "item": "minecraft:cauldron",
-      "nbt": "{CustomModelData:3420002}"
+      "nbt": "{CustomModelData:3420300}"
     },
     "title": [
       "",

@@ -10,7 +10,7 @@
             "entity": "this",
             "predicate": {
               "type": "minecraft:phantom",
-              "nbt": "{Tags:['gm4_enlarged_phantom']}"
+              "nbt": "{Tags:[\"gm4_enlarged_phantom\"]}"
             }
           }
         ],

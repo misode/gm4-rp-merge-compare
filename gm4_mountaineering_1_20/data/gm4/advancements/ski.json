@@ -2,14 +2,14 @@
   "display": {
     "icon": {
       "item": "iron_boots",
-      "nbt": "{CustomModelData:3420001}"
+      "nbt": "{CustomModelData:3420002}"
     },
     "title": {
-      "translate": "advancement.gm4.mountaineering.title",
+      "translate": "advancement.gm4.mountaineering.ski.title",
       "fallback": "Piste de R\u00e9sistance"
     },
     "description": {
-      "translate": "advancement.gm4.mountaineering.description",
+      "translate": "advancement.gm4.mountaineering.ski.description",
       "fallback": "Get yourself a pair of skis",
       "color": "gray"
     }

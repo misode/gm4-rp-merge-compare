@@ -2,7 +2,7 @@
   "display": {
     "icon": {
       "item": "minecraft:crafting_table",
-      "nbt": "{CustomModelData:3420005}"
+      "nbt": "{CustomModelData:3420002}"
     },
     "title": [
       "",

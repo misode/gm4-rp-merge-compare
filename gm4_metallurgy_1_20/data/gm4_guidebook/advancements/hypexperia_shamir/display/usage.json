@@ -2,7 +2,7 @@
   "display": {
     "icon": {
       "item": "minecraft:anvil",
-      "nbt": "{CustomModelData:3420110}"
+      "nbt": "{CustomModelData:3420105}"
     },
     "title": [
       "",

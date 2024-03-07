@@ -11,4 +11,4 @@ execute if loaded 29999998 1 7133 unless entity 344d47-4-4-4-f04ce104d run summo
 execute unless score forceload gm4_earliest_version matches ..102000 run scoreboard players set forceload gm4_earliest_version 102000
 
 
-data modify storage gm4:log versions append value {id:"gm4_forceload",module:"lib_forceload",version:"1.2.X",from:"Ziprails"}
+data modify storage gm4:log versions append value {id:"gm4_forceload",module:"lib_forceload",version:"1.2.X",from:"Gamemode 4 Custom Crafters"}

@@ -1,7 +1,7 @@
 {
-    "values": [
-        "minecraft:creeper",
-        "minecraft:skeleton",
-        "minecraft:zombie"
-    ]
+  "values": [
+    "minecraft:creeper",
+    "minecraft:skeleton",
+    "minecraft:zombie"
+  ]
 }

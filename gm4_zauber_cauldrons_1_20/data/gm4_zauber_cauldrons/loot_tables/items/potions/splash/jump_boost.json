@@ -22,8 +22,8 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "translate": "item.gm4.zauber_cauldrons.multi_use_bottle.potion.leaping",
-                "fallback": "Soulution of Leaping",
+                "translate": "item.gm4.zauber_cauldrons.multi_use_bottle.splash.leaping",
+                "fallback": "Splash Soulution of Leaping",
                 "italic": false
               },
               "conditions": [

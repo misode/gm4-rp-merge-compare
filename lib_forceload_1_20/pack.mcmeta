@@ -1,19 +1,6 @@
 {
   "pack": {
-    "pack_format": 15,
-    "description": [
-      "Gamemode 4 Forceload",
-      "\n",
-      {
-        "text": "Gamemode 4 for 1.20",
-        "color": "#4AA0C7"
-      }
-    ],
-    "supported_formats": {
-      "min_inclusive": 15,
-      "max_inclusive": 26
-    }
-  },
-  "version": "1.2.0",
-  "commit_hash": "5f07d3406"
+    "pack_format": 26,
+    "description": "lib_forceload is a mcfunction library adding a forceloaded chunk with common utlities.\nVersion: 1.2.X"
+  }
 }

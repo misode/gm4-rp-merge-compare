@@ -9,7 +9,7 @@
             "items": [
               "minecraft:player_head"
             ],
-            "nbt": "{gm4_machines:{id:'teleportation_anchor'}}"
+            "nbt": "{gm4_machines:{id:\"teleportation_anchor\"}}"
           }
         ],
         "player": [

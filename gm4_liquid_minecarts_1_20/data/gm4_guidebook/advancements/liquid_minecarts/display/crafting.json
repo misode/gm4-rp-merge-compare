@@ -2,7 +2,7 @@
   "display": {
     "icon": {
       "item": "minecraft:hopper_minecart",
-      "nbt": "{CustomModelData:3420001}"
+      "nbt": "{CustomModelData:3420004}"
     },
     "title": [
       "",

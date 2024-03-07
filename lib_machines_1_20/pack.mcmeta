@@ -1,19 +1,6 @@
 {
   "pack": {
-    "pack_format": 15,
-    "description": [
-      "Gamemode 4 Machines",
-      "\n",
-      {
-        "text": "Gamemode 4 for 1.20",
-        "color": "#4AA0C7"
-      }
-    ],
-    "supported_formats": {
-      "min_inclusive": 15,
-      "max_inclusive": 26
-    }
-  },
-  "version": "1.1.0",
-  "commit_hash": "5f07d3406"
+    "pack_format": 26,
+    "description": "lib_machines is a mcfunction library that adds logic for placing and breaking custom blocks.\nVersion: 1.1.X"
+  }
 }

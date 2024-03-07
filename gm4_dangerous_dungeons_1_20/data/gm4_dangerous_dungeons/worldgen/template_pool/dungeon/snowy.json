@@ -33,7 +33,7 @@
                   "input_predicate": {
                     "predicate_type": "minecraft:random_block_match",
                     "block": "minecraft:stone_bricks",
-                    "probability": 0.20
+                    "probability": 0.2
                   },
                   "output_state": {
                     "Name": "minecraft:cracked_stone_bricks"
@@ -46,7 +46,7 @@
                   "input_predicate": {
                     "predicate_type": "minecraft:random_block_match",
                     "block": "minecraft:stone_bricks",
-                    "probability": 0.20
+                    "probability": 0.2
                   },
                   "output_state": {
                     "Name": "minecraft:polished_andesite"

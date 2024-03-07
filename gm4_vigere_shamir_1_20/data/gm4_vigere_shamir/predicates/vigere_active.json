@@ -14,7 +14,7 @@
             "items": [
               "minecraft:shield"
             ],
-            "nbt": "{gm4_metallurgy:{has_shamir:1b,active_shamir:'vigere'}}"
+            "nbt": "{gm4_metallurgy:{has_shamir:1b,active_shamir:\"vigere\"}}"
           }
         }
       }

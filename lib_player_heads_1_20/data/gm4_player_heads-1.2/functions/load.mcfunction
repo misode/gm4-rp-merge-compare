@@ -9,4 +9,4 @@ schedule clear gm4_player_heads-1.0:main
 execute unless score player_heads gm4_earliest_version matches ..102000 run scoreboard players set player_heads gm4_earliest_version 102000
 
 
-data modify storage gm4:log versions append value {id:"gm4_player_heads",module:"lib_player_heads",version:"1.2.X",from:"Ziprails"}
+data modify storage gm4:log versions append value {id:"gm4_player_heads",module:"lib_player_heads",version:"1.2.X",from:"Gamemode 4 Player Death"}

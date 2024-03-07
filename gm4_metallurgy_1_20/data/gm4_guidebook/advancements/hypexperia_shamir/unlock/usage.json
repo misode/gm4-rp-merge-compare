@@ -6,7 +6,7 @@
       "conditions": {
         "items": [
           {
-            "nbt": "{gm4_metallurgy:{has_shamir:1b,stored_shamir:'hypexperia'}}"
+            "nbt": "{gm4_metallurgy:{has_shamir:1b,stored_shamir:\"hypexperia\"}}"
           }
         ],
         "player": [
@@ -59,7 +59,7 @@
       "conditions": {
         "items": [
           {
-            "nbt": "{gm4_metallurgy:{has_shamir:1b,active_shamir:'hypexperia'}}"
+            "nbt": "{gm4_metallurgy:{has_shamir:1b,active_shamir:\"hypexperia\"}}"
           }
         ],
         "player": [

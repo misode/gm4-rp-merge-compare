@@ -46,7 +46,7 @@
                   "input_predicate": {
                     "predicate_type": "minecraft:random_block_match",
                     "block": "minecraft:terracotta",
-                    "probability": 0.30
+                    "probability": 0.3
                   },
                   "output_state": {
                     "Name": "minecraft:cut_red_sandstone"

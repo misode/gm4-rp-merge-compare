@@ -1,14 +1,14 @@
 {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-        "equipment": {
-            "offhand": {
-                "items": [
-                    "minecraft:potion"
-                ],
-                "potion": "minecraft:water"
-            }
-        }
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "offhand": {
+        "items": [
+          "minecraft:potion"
+        ],
+        "potion": "minecraft:water"
+      }
     }
+  }
 }

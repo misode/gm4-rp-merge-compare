@@ -2,7 +2,7 @@
   "display": {
     "icon": {
       "item": "minecraft:player_head",
-      "nbt": "{CustomModelData:3420059,SkullOwner:\"MHF_Enderman\"}"
+      "nbt": "{SkullOwner:\"MHF_Enderman\",CustomModelData:3420002}"
     },
     "title": [
       "",

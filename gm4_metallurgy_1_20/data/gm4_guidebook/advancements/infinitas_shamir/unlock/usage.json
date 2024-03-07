@@ -6,7 +6,7 @@
       "conditions": {
         "items": [
           {
-            "nbt": "{gm4_metallurgy:{has_shamir:1b,stored_shamir:'infinitas'}}"
+            "nbt": "{gm4_metallurgy:{has_shamir:1b,stored_shamir:\"infinitas\"}}"
           }
         ],
         "player": [
@@ -59,7 +59,7 @@
       "conditions": {
         "items": [
           {
-            "nbt": "{gm4_metallurgy:{has_shamir:1b,active_shamir:'infinitas'}}"
+            "nbt": "{gm4_metallurgy:{has_shamir:1b,active_shamir:\"infinitas\"}}"
           }
         ],
         "player": [

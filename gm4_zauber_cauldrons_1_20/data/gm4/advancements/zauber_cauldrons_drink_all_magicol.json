@@ -2,7 +2,7 @@
   "display": {
     "icon": {
       "item": "minecraft:potion",
-      "nbt": "{CustomModelData:3420000}"
+      "nbt": "{CustomModelData:3420313}"
     },
     "title": {
       "translate": "advancement.gm4.zauber_cauldrons.drink_all_magicol.title",

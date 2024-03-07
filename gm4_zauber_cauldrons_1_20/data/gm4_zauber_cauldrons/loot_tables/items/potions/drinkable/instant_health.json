@@ -22,7 +22,7 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "translate": "item.gm4.zauber_cauldrons.multi_use_bottle.potion.healing",
+                "translate": "item.gm4.zauber_cauldrons.multi_use_bottle.drinkable.healing",
                 "fallback": "Soulution of Healing",
                 "italic": false
               },

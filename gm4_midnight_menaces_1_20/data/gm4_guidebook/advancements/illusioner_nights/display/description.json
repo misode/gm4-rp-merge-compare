@@ -2,7 +2,7 @@
   "display": {
     "icon": {
       "item": "minecraft:lingering_potion",
-      "nbt": "{CustomModelData:3420001,Potion:\"minecraft:long_invisibility\"}"
+      "nbt": "{Potion:\"minecraft:long_invisibility\",CustomModelData:3420001}"
     },
     "title": [
       "",

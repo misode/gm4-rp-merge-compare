@@ -7,7 +7,7 @@
         "damage": {
           "source_entity": {
             "type": "minecraft:skeleton",
-            "nbt": "{Tags:['gm4_tipped_skeleton']}"
+            "nbt": "{Tags:[\"gm4_tipped_skeleton\"]}"
           }
         },
         "player": [

@@ -9,7 +9,7 @@
             "items": [
               "minecraft:glass_bottle"
             ],
-            "nbt": "{gm4_zauber_cauldrons:{item:'bottled_vex'}}"
+            "nbt": "{gm4_zauber_cauldrons:{item:\"bottled_vex\"}}"
           }
         ],
         "player": [

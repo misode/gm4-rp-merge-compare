@@ -14,22 +14,30 @@
               "processor_type": "rule",
               "rules": [
                 {
-                  "location_predicate": { "predicate_type": "always_true" },
+                  "location_predicate": {
+                    "predicate_type": "always_true"
+                  },
                   "input_predicate": {
                     "predicate_type": "random_block_match",
                     "block": "minecraft:ice",
                     "probability": 0.2
                   },
-                  "output_state": { "Name": "minecraft:packed_ice" }
+                  "output_state": {
+                    "Name": "minecraft:packed_ice"
+                  }
                 },
                 {
-                  "location_predicate": { "predicate_type": "always_true" },
+                  "location_predicate": {
+                    "predicate_type": "always_true"
+                  },
                   "input_predicate": {
                     "predicate_type": "random_block_match",
                     "block": "minecraft:ice",
                     "probability": 0.8
                   },
-                  "output_state": { "Name": "minecraft:snow_block" }
+                  "output_state": {
+                    "Name": "minecraft:snow_block"
+                  }
                 }
               ]
             }

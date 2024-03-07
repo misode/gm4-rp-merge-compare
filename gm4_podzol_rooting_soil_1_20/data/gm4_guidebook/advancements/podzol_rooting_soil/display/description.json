@@ -2,7 +2,7 @@
   "display": {
     "icon": {
       "item": "minecraft:spruce_sapling",
-      "nbt": "{CustomModelData:3420005}"
+      "nbt": "{CustomModelData:3420001}"
     },
     "title": [
       "",

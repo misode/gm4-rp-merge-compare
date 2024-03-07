@@ -2,7 +2,7 @@
   "display": {
     "icon": {
       "item": "minecraft:potion",
-      "nbt": "{CustomModelData:3420005,Potion:\"minecraft:swiftness\"}"
+      "nbt": "{Potion:\"minecraft:swiftness\",CustomModelData:3420006}"
     },
     "title": [
       "",

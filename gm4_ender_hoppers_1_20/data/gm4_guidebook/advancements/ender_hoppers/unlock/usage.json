@@ -68,7 +68,7 @@
                 "blocks": [
                   "minecraft:hopper"
                 ],
-                "nbt": "{CustomName: '{\"translate\":\"gm4.second\",\"fallback\":\"%1$s\",\"with\":[{\"translate\":\"container.gm4.ender_hopper\",\"fallback\":\"Ender Hopper\"},{\"color\":\"white\",\"font\":\"gm4:container_gui\",\"extra\":[{\"color\":\"#404040\",\"font\":\"gm4:default\",\"translate\":\"container.gm4.ender_hopper\",\"fallback\":\"Ender Hopper\"}],\"translate\":\"gui.gm4.ender_hopper\",\"fallback\":\"\"}]}'}"
+                "nbt": "{CustomName:'{\"translate\":\"gm4.second\",\"fallback\":\"%1$s\",\"with\":[{\"translate\":\"container.gm4.ender_hopper\",\"fallback\":\"Ender Hopper\"},{\"color\":\"white\",\"font\":\"gm4:container_gui\",\"extra\":[{\"color\":\"#404040\",\"font\":\"gm4:default\",\"translate\":\"container.gm4.ender_hopper\",\"fallback\":\"Ender Hopper\"}],\"translate\":\"gui.gm4.ender_hopper\",\"fallback\":\"\"}]}'}"
               }
             }
           }

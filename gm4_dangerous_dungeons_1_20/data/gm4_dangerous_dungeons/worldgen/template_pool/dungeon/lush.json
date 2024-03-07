@@ -14,7 +14,9 @@
               "processor_type": "rule",
               "rules": [
                 {
-                  "location_predicate": { "predicate_type": "always_true" },
+                  "location_predicate": {
+                    "predicate_type": "always_true"
+                  },
                   "input_predicate": {
                     "predicate_type": "random_block_match",
                     "block": "stone",
@@ -42,7 +44,9 @@
               "processor_type": "rule",
               "rules": [
                 {
-                  "location_predicate": { "predicate_type": "always_true" },
+                  "location_predicate": {
+                    "predicate_type": "always_true"
+                  },
                   "input_predicate": {
                     "predicate_type": "random_block_match",
                     "block": "stone",
@@ -70,7 +74,9 @@
               "processor_type": "rule",
               "rules": [
                 {
-                  "location_predicate": { "predicate_type": "always_true" },
+                  "location_predicate": {
+                    "predicate_type": "always_true"
+                  },
                   "input_predicate": {
                     "predicate_type": "random_block_match",
                     "block": "stone",
@@ -98,7 +104,9 @@
               "processor_type": "rule",
               "rules": [
                 {
-                  "location_predicate": { "predicate_type": "always_true" },
+                  "location_predicate": {
+                    "predicate_type": "always_true"
+                  },
                   "input_predicate": {
                     "predicate_type": "random_block_match",
                     "block": "stone",

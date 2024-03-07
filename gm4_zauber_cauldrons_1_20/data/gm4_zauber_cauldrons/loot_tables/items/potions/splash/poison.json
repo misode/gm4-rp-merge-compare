@@ -22,8 +22,8 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "translate": "item.gm4.zauber_cauldrons.multi_use_bottle.potion.poison",
-                "fallback": "Soulution of Poison",
+                "translate": "item.gm4.zauber_cauldrons.multi_use_bottle.splash.poison",
+                "fallback": "Splash Soulution of Poison",
                 "italic": false
               },
               "conditions": [

@@ -22,8 +22,8 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "translate": "item.gm4.zauber_cauldrons.multi_use_bottle.potion.healing",
-                "fallback": "Soulution of Healing",
+                "translate": "item.gm4.zauber_cauldrons.multi_use_bottle.lingering.healing",
+                "fallback": "Lingering Soulution of Healing",
                 "italic": false
               },
               "conditions": [

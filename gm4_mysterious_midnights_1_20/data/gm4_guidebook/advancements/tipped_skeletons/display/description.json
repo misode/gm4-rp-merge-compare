@@ -2,7 +2,7 @@
   "display": {
     "icon": {
       "item": "minecraft:tipped_arrow",
-      "nbt": "{CustomModelData:3420001,Potion:\"minecraft:long_poison\"}"
+      "nbt": "{Potion:\"minecraft:long_poison\",CustomModelData:3420001}"
     },
     "title": [
       "",

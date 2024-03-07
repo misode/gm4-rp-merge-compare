@@ -11,7 +11,7 @@
               "equipment": {
                 "mainhand": {
                   "tag": "gm4_combat_expanded:weapon",
-                  "nbt": "{gm4_combat_expanded:{strike:giant}}"
+                  "nbt": "{gm4_combat_expanded:{strike:\"giant\"}}"
                 }
               }
             }

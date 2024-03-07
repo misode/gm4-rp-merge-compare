@@ -22,8 +22,8 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "translate": "item.gm4.zauber_cauldrons.multi_use_bottle.potion.swiftness",
-                "fallback": "Soulution of Swiftness",
+                "translate": "item.gm4.zauber_cauldrons.multi_use_bottle.splash.swiftness",
+                "fallback": "Splash Soulution of Swiftness",
                 "italic": false
               },
               "conditions": [

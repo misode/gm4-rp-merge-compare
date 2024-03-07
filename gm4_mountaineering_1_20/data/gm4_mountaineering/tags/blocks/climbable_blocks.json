@@ -1,5 +1,5 @@
 {
-    "values":[
+  "values": [
     "#minecraft:base_stone_overworld",
     "#minecraft:coal_ores",
     "#minecraft:copper_ores",
@@ -21,5 +21,5 @@
     "minecraft:polished_diorite",
     "minecraft:polished_granite",
     "minecraft:stone_bricks"
-    ]
-   }
+  ]
+}

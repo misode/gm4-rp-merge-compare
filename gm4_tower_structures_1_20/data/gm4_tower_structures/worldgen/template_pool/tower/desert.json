@@ -14,31 +14,43 @@
               "processor_type": "minecraft:rule",
               "rules": [
                 {
-                  "location_predicate": { "predicate_type": "minecraft:always_true" },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
                   "input_predicate": {
                     "predicate_type": "minecraft:random_block_match",
                     "block": "minecraft:smooth_sandstone",
                     "probability": 0.25
                   },
-                  "output_state": { "Name": "minecraft:sandstone" }
+                  "output_state": {
+                    "Name": "minecraft:sandstone"
+                  }
                 },
                 {
-                  "location_predicate": { "predicate_type": "minecraft:always_true" },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
                   "input_predicate": {
                     "predicate_type": "minecraft:random_block_match",
                     "block": "minecraft:smooth_sandstone",
-                    "probability": 0.10
+                    "probability": 0.1
                   },
-                  "output_state": { "Name": "minecraft:cut_sandstone" }
+                  "output_state": {
+                    "Name": "minecraft:cut_sandstone"
+                  }
                 },
                 {
-                  "location_predicate": { "predicate_type": "minecraft:always_true" },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
                   "input_predicate": {
                     "predicate_type": "minecraft:random_block_match",
                     "block": "minecraft:smooth_sandstone",
-                    "probability": 0.10
+                    "probability": 0.1
                   },
-                  "output_state": { "Name": "minecraft:chiseled_sandstone" }
+                  "output_state": {
+                    "Name": "minecraft:chiseled_sandstone"
+                  }
                 }
               ]
             }
@@ -67,31 +79,43 @@
               "processor_type": "minecraft:rule",
               "rules": [
                 {
-                  "location_predicate": { "predicate_type": "minecraft:always_true" },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
                   "input_predicate": {
                     "predicate_type": "minecraft:random_block_match",
                     "block": "minecraft:cut_sandstone",
                     "probability": 0.2
                   },
-                  "output_state": { "Name": "minecraft:smooth_sandstone" }
+                  "output_state": {
+                    "Name": "minecraft:smooth_sandstone"
+                  }
                 },
                 {
-                  "location_predicate": { "predicate_type": "minecraft:always_true" },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
                   "input_predicate": {
                     "predicate_type": "minecraft:random_block_match",
                     "block": "minecraft:cut_sandstone",
                     "probability": 0.07
                   },
-                  "output_state": { "Name": "minecraft:chiseled_sandstone" }
+                  "output_state": {
+                    "Name": "minecraft:chiseled_sandstone"
+                  }
                 },
                 {
-                  "location_predicate": { "predicate_type": "minecraft:always_true" },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
                   "input_predicate": {
                     "predicate_type": "minecraft:random_block_match",
                     "block": "minecraft:cut_sandstone",
                     "probability": 0.8
                   },
-                  "output_state": { "Name": "minecraft:sandstone" }
+                  "output_state": {
+                    "Name": "minecraft:sandstone"
+                  }
                 }
               ]
             }

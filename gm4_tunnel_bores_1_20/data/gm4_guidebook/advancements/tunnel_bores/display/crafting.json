@@ -2,7 +2,7 @@
   "display": {
     "icon": {
       "item": "minecraft:piston",
-      "nbt": "{CustomModelData:3420004}"
+      "nbt": "{CustomModelData:3420005}"
     },
     "title": [
       "",

@@ -22,8 +22,8 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "translate": "item.gm4.zauber_cauldrons.multi_use_bottle.potion.strength",
-                "fallback": "Soulution of Strength",
+                "translate": "item.gm4.zauber_cauldrons.multi_use_bottle.splash.strength",
+                "fallback": "Splash Soulution of Strength",
                 "italic": false
               },
               "conditions": [

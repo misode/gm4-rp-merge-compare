@@ -1,7 +1,7 @@
 {
-    "values":[
-        "#minecraft:ice",
-        "minecraft:snow",
-        "minecraft:snow_block"
-    ]
-   }
+  "values": [
+    "#minecraft:ice",
+    "minecraft:snow",
+    "minecraft:snow_block"
+  ]
+}

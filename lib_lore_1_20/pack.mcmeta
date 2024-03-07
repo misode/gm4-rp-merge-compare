@@ -1,19 +1,6 @@
 {
   "pack": {
-    "pack_format": 15,
-    "description": [
-      "Gamemode 4 Lore",
-      "\n",
-      {
-        "text": "Gamemode 4 for 1.20",
-        "color": "#4AA0C7"
-      }
-    ],
-    "supported_formats": {
-      "min_inclusive": 15,
-      "max_inclusive": 26
-    }
-  },
-  "version": "1.0.0",
-  "commit_hash": "5f07d3406"
+    "pack_format": 26,
+    "description": "Allows other datapacks to easily search, remove, insert, and replace lines of lore on items.\nVersion: 1.0.X"
+  }
 }

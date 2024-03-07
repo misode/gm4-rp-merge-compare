@@ -1,5 +1,6 @@
 {
   "values": [
+    "gm4_block_compressors:upgrade_paths/run",
     "gm4_custom_crafters-3.1:upgrade_paths/run"
   ]
 }

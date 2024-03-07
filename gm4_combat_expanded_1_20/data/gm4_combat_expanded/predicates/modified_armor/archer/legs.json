@@ -1,14 +1,14 @@
 [
-    {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-            "equipment": {
-                "legs": {
-                    "tag": "gm4_combat_expanded:armor",
-                    "nbt": "{gm4_combat_expanded:{archer:1}}"
-                }
-            }
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "legs": {
+          "tag": "gm4_combat_expanded:armor",
+          "nbt": "{gm4_combat_expanded:{archer:1}}"
         }
+      }
     }
+  }
 ]

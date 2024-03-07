@@ -1,6 +1,5 @@
 {
-    "values":[
-      "gm4_standard_liquids:tank_init"
-    ]
-
+  "values": [
+    "gm4_standard_liquids:tank_init"
+  ]
 }

@@ -2,7 +2,7 @@
   "display": {
     "icon": {
       "item": "minecraft:armor_stand",
-      "nbt": "{CustomModelData:3420003}"
+      "nbt": "{CustomModelData:3420004}"
     },
     "title": [
       "",

@@ -14,7 +14,7 @@
               },
               "equipment": {
                 "chest": {
-                  "nbt": "{gm4_metallurgy:{has_shamir:1b,active_shamir:'iacio'}}"
+                  "nbt": "{gm4_metallurgy:{has_shamir:1b,active_shamir:\"iacio\"}}"
                 }
               }
             }

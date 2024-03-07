@@ -14,40 +14,56 @@
               "processor_type": "minecraft:rule",
               "rules": [
                 {
-                  "location_predicate": { "predicate_type": "minecraft:always_true" },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
                   "input_predicate": {
                     "predicate_type": "minecraft:random_block_match",
                     "block": "minecraft:stone",
                     "probability": 0.08
                   },
-                  "output_state": { "Name": "minecraft:cracked_stone_bricks" }
+                  "output_state": {
+                    "Name": "minecraft:cracked_stone_bricks"
+                  }
                 },
                 {
-                  "location_predicate": { "predicate_type": "minecraft:always_true" },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
                   "input_predicate": {
                     "predicate_type": "minecraft:random_block_match",
                     "block": "minecraft:stone",
                     "probability": 0.16
                   },
-                  "output_state": { "Name": "minecraft:cobblestone" }
+                  "output_state": {
+                    "Name": "minecraft:cobblestone"
+                  }
                 },
                 {
-                  "location_predicate": { "predicate_type": "minecraft:always_true" },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
                   "input_predicate": {
                     "predicate_type": "minecraft:random_block_match",
                     "block": "minecraft:stone",
                     "probability": 0.22
                   },
-                  "output_state": { "Name": "minecraft:andesite" }
+                  "output_state": {
+                    "Name": "minecraft:andesite"
+                  }
                 },
                 {
-                  "location_predicate": { "predicate_type": "minecraft:always_true" },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
                   "input_predicate": {
                     "predicate_type": "minecraft:random_block_match",
                     "block": "minecraft:stone",
                     "probability": 0.12
                   },
-                  "output_state": { "Name": "minecraft:polished_andesite" }
+                  "output_state": {
+                    "Name": "minecraft:polished_andesite"
+                  }
                 }
               ]
             }
@@ -121,49 +137,69 @@
               "processor_type": "minecraft:rule",
               "rules": [
                 {
-                  "location_predicate": { "predicate_type": "minecraft:always_true" },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
                   "input_predicate": {
                     "predicate_type": "minecraft:random_block_match",
                     "block": "minecraft:stone_bricks",
                     "probability": 0.2
                   },
-                  "output_state": { "Name": "minecraft:cracked_stone_bricks" }
+                  "output_state": {
+                    "Name": "minecraft:cracked_stone_bricks"
+                  }
                 },
                 {
-                  "location_predicate": { "predicate_type": "minecraft:always_true" },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
                   "input_predicate": {
                     "predicate_type": "minecraft:random_block_match",
                     "block": "minecraft:stone_bricks",
                     "probability": 0.07
                   },
-                  "output_state": { "Name": "minecraft:polished_andesite" }
+                  "output_state": {
+                    "Name": "minecraft:polished_andesite"
+                  }
                 },
                 {
-                  "location_predicate": { "predicate_type": "minecraft:always_true" },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
                   "input_predicate": {
                     "predicate_type": "minecraft:random_block_match",
                     "block": "minecraft:cobblestone",
                     "probability": 0.04
                   },
-                  "output_state": { "Name": "minecraft:stone" }
+                  "output_state": {
+                    "Name": "minecraft:stone"
+                  }
                 },
                 {
-                  "location_predicate": { "predicate_type": "minecraft:always_true" },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
                   "input_predicate": {
                     "predicate_type": "minecraft:random_block_match",
                     "block": "minecraft:cobblestone",
                     "probability": 0.15
                   },
-                  "output_state": { "Name": "minecraft:gravel" }
+                  "output_state": {
+                    "Name": "minecraft:gravel"
+                  }
                 },
                 {
-                  "location_predicate": { "predicate_type": "minecraft:always_true" },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
                   "input_predicate": {
                     "predicate_type": "minecraft:random_block_match",
                     "block": "minecraft:cobblestone",
                     "probability": 0.87
                   },
-                  "output_state": { "Name": "minecraft:andesite" }
+                  "output_state": {
+                    "Name": "minecraft:andesite"
+                  }
                 }
               ]
             }

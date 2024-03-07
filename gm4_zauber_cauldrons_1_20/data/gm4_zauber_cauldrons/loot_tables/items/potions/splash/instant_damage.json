@@ -22,8 +22,8 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "translate": "item.gm4.zauber_cauldrons.multi_use_bottle.potion.harming",
-                "fallback": "Soulution of Harming",
+                "translate": "item.gm4.zauber_cauldrons.multi_use_bottle.splash.harming",
+                "fallback": "Splash Soulution of Harming",
                 "italic": false
               },
               "conditions": [
